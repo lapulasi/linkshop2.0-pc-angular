@@ -1,0 +1,91 @@
+<div class="container-fluid">
+<div class="card">
+  <div class="card-body">
+    <form>
+      <div class="form-row">
+        <div class="col-4 ">
+          <div class="row">
+            <label class="col-3 col-form-label">选择组织：</label>
+            <div class="col-9">
+              <input type="text" class="form-control" [(ngModel)]="orgName" (focus)="selectOrg(staticModal)" [ngModelOptions]="{standalone: true}">
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <label class="col-3 col-form-label">选择时间：</label>
+            <div class="col-9">
+              <input type="text"
+                     placeholder="请选择时间"
+                     class="form-control"
+                     bsDaterangepicker [(ngModel)]="bsRangeValue"
+                     [ngModelOptions]="{standalone: true}"
+                     (bsValueChange)="onValueChange($event)">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<div class="container-fluid" >
+    <div class="row" *ngFor="let i of [0,1]">
+      <div class="col-4"
+           *ngFor="let shop of shopList | slice:((currentPage - 1) * itemsPerPage + 3 * i):((currentPage - 1) * itemsPerPage + 3 * i + 3)"
+           (click)="viewSingleHeatMap(shop,template)">
+        <p class="text-center text-info h5">{{shop.name}}</p>
+        <app-heat-map [shopId]="shop.id" [showSlider]="false" height="400px"
+                      [dateRange]="dateStringRange"></app-heat-map>
+      </div>
+    </div>
+</div>
+
+<pagination [totalItems]="shopList.length" [itemsPerPage]="itemsPerPage"
+            [(ngModel)]="currentPage"></pagination>
+
+<ng-template #template>
+  <div class="modal-header">
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="container-fluid" *ngIf="popUpShop">
+      <div class="row">
+        <div class="col">
+          <p class="text-center text-info h5">{{popUpShop.name}}</p>
+          <p><input type="text"
+                 placeholder="请选择时间"
+                 class="form-control"
+                 bsDaterangepicker [(ngModel)]="popUpBsRangeValue"
+                 [ngModelOptions]="{standalone: true}"
+                 (bsValueChange)="onValueChange2($event)"/>
+          </p>
+          <app-heat-map [shopId]="popUpShop.id" [showSlider]="true"
+                        [dateRange]="popUpDateStringRange"></app-heat-map>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
+     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--<h4 class="modal-title pull-left">{{companyName}}</h4>-->
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide();">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-org-tree [companyId]="companyId" (change)="getOrgInfo($event, staticModal)"></app-org-tree>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,11 @@
+<div class="row">
+  <p class="title col-7">趋势分析</p>
+  <button class="btn btn-outline-secondary col-1"
+          *ngFor="let item of dateType.list"
+          [ngClass]="{'current': dateType.curr === item.val}"
+          (click)="changeDateType(item.val)"
+  >{{item.name}}</button>
+</div>
+<div class="row">
+  <div class="trend-analysis" echarts  [options]="trendAnalysisChartOption" (chartInit)="onChartInit($event, 'chartInit')" ></div>
+</div>

@@ -1,0 +1,225 @@
+<div class="container" style="background: #0f1626!important; width: 100%!important;">
+  <div class="header">
+    <div class="logo">
+      <img src="../assets/../../assets/images/logo.png" alt="">
+      <p>门店零售高效解决方案</p>
+    </div>
+    <div class="user">
+      <ul>
+        <li>您好！</li>
+        <li>Jack_Ma</li>
+        <li>[退出]</li>
+      </ul>
+    </div>
+    <div class="nav">
+      <ul>
+        <li class="active"><a href="javascript:;">首页</a></li>
+        <li><a href="#">数据仓库</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <div class="dataOverview sidebar">
+      <div class="title">数据概览</div>
+      <div class="passenger">
+        <ul class="dataList">
+          <li>客流量</li>
+          <li><span>{{chart.countStat?.count}}</span><span>人</span></li>
+          <li>最大客流</li>
+          <li>{{chart.countStat?.max?.date}}{{date.dateType.curr.unit}}：<span>{{chart.countStat?.max?.count}}人</span></li>
+          <li>最小客流</li>
+          <li>{{chart.countStat?.min?.date}}{{date.dateType.curr.unit}}：<span>{{chart.countStat?.min?.count}}人</span></li>
+        </ul>
+        <div id="passengerEcharts" echarts  [options]="chart.countChartOption"></div>
+      </div>
+      <div class="stay">
+        <ul class="dataList">
+          <li>平均驻留</li>
+          <li><span>{{chart.stayStat?.avgStay}}</span><span>分钟</span></li>
+          <li>最长驻留</li>
+          <li>{{chart.stayStat?.max?.date}}{{date.dateType.curr.unit}}：<span>{{chart.stayStat?.max?.avgStay}}分钟</span></li>
+          <li>最短驻留</li>
+          <li>{{chart.stayStat?.min?.date}}{{date.dateType.curr.unit}}：<span>{{chart.stayStat?.min?.avgStay}}分钟</span></li>
+        </ul>
+        <div id="stayEcharts" echarts  [options]="chart.stayChartOption"></div>
+      </div>
+      <div class="sex">
+        <ul>
+          <li>性别比例</li>
+          <li><span>{{chart.gender?.maleRate | number: '1.0-0'}}</span><span>%男</span></li>
+          <li><span>{{chart.gender?.femaleRate | number: '1.0-0'}}</span><span>%女</span></li>
+          <li>年龄分布</li>
+          <li>如右图所示 <img src="../../assets/images/icon.png" alt=""></li>
+        </ul>
+        <div id="sexEcharts" echarts  [options]="chart.ageChartOption"></div>
+      </div>
+      <div class="heatMap hidden">
+        <p>店铺热力图</p>
+        <img src="../../assets/images/rlt.png" alt="">
+      </div>
+      <div class="averageTime">
+        <ul class="dataList">
+          <li>平均工时</li>
+          <li><span>8.3</span><span>小时</span></li>
+          <li>同比上升</li>
+          <li><span class="red">↑</span><span class="red">120%</span></li>
+          <li>排名</li>
+          <li><span>8</span><span class="red">↑</span><span class="red">12</span></li>
+        </ul>
+        <div id="workHoursEcharts"></div>
+      </div>
+    </div>
+    <div class="theme sidebar">
+      <div class="title">
+        <p>门店主题分析</p>
+        <div class="btn">
+          <p>{{theme == 'count' ? '客流' : '驻留'}}</p>
+          <ol>
+            <li (click)="changeTheme()"></li>
+            <li (click)="changeTheme()"></li>
+          </ol>
+        </div>
+      </div>
+      <div class="daytimeTrends">
+        <p>日间趋势</p>
+        <div id="daytime" echarts [options]="chart.trendChartOption"></div>
+      </div>
+      <div class="passengerHours">
+        <p>客流时段</p>
+        <div id="passengerHours" echarts [options]="chart.periodChartOption"></div>
+      </div>
+      <div class="rank">
+        <div class="title1">
+          <p class="hidden">客流排名</p>
+          <p>{{nextLevel?.name}}排名</p>
+          <div class="btn">
+            <p>top6</p>
+          </div>
+        </div>
+        <table>
+          <thead>
+          <tr>
+            <td>排名</td>
+            <td>{{nextLevel?.name}}名称</td>
+            <td>{{theme == 'count' ? '客流量' : '驻留时间'}}</td>
+            <td>占比{{map.rank?.sum}}</td>
+          </tr>
+          </thead>
+          <tbody>
+          <ng-container *ngFor="let item of mapService.rank?.list;index as i">
+            <tr *ngIf="i < 6">
+              <td>{{i + 1}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.val | number: '1.0-0'}}{{theme == 'count' ? '人' : '分钟'}}</td>
+              <td>{{100 * item.val / mapService.rank?.sum | number: '1.0-0'}}%</td>
+            </tr>
+          </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="map">
+      <div class="title">{{org.name}}</div>
+      <p class="time">截止时间：{{date.now | date: 'yyyy-MM-dd HH:mm'}}</p>
+      <div class="tab">
+        <ul>
+          <li>
+            <span>{{date.dateType.curr.des}}</span>
+            <ol><li (click)="switchDateType(-1)"></li><li (click)="switchDateType(1)"></li></ol>
+          </li>
+          <li>
+            <span *ngIf="date.dateType.curr.val === 'day'">{{date.currDate | date: 'yyyy.MM.dd'}}</span>
+            <span *ngIf="date.dateType.curr.val === 'month'">{{date.currDate | date: 'yyyy年MM月'}}</span>
+            <span *ngIf="date.dateType.curr.val === 'week'">{{date.weekStart | date: 'MM.dd'}}-{{date.weekEnd | date: 'MM.dd'}}</span>
+            <ol><li (click)="switchDate(-1)"></li><li (click)="switchDate(1)"></li></ol>
+          </li>
+        </ul>
+        <ol>
+          <li [ngClass]="{'select': mapService.markerData.type === 'num'}" (click)="mapService.markerData.type='num'">数值</li>
+          <li [ngClass]="{'select': mapService.markerData.type === 'rate'}" (click)="mapService.markerData.type='rate'">占比</li>
+          <li [ngClass]="{'select': mapService.markerData.type === 'heatMap'}" (click)="mapService.markerData.type='heatMap'">热力图</li>
+        </ol>
+        <!-------------------地图组件-------------------->
+        <ngx-amap #map id="map"
+                  (ready)="mapService.onMapReady($event, org.adcode)"
+                  [mapStyle]="'amap://styles/4c1e1d59e0f2fc4c398fe0841567f1b1'"
+                  [center]="org.geo" [zoom]="5">
+          <ng-container *ngFor="let item of mapService.markerData.list">
+
+            <amap-marker [position]="item.geo" [zIndex]="101" [offset]="{x: -20, y: -44}"
+                         [content]="'<div class=\'bubble_map\'>' + (mapService.markerData.type === 'rate' ? ((item.guestCount * 100 / mapService.markerData.sumCount | number: '1.0-0') + '%') : item.guestCount) + '</div>'">
+            </amap-marker>
+
+            <amap-marker [position]="item.geo" [offset]="{x: -6 * item.name.length, y: 0}"
+                         (ready)="mapService.onMarkerReady(map)"
+                         [content]="'<div style=\'font-size: 14px; color: #fff;width: ' + (item.name.length + 1) * 14 + 'px;\'>' + item.name + '</div>'">
+            </amap-marker>
+
+          </ng-container>
+
+        </ngx-amap>
+
+        <div class="strech">
+          <img src="../../assets/images/dtzdicon.png" alt="">
+          <img src="../../assets/images/dtsxicon.png" alt="">
+        </div>
+      </div>
+      <div class="jrgl">
+        <p class="subtitle">今日概览</p>
+        <div class="glList">
+          <div class="panel">
+            <div class="icon">
+              <img src="../../assets/images/rll_icon.png" alt="">
+              <p>客流量</p>
+            </div>
+            <ul>
+              <li><span>{{mapService.dayViewData?.count?.val}}</span>人</li>
+              <li>同升：{{mapService.dayViewData?.count?.rate}}%</li>
+              <li>排名：{{mapService.dayViewData?.count?.rank}}</li>
+            </ul>
+            <div class="line"></div>
+          </div>
+          <div class="panel">
+            <div class="icon">
+              <img src="../../assets/images/pjzl_icon.png" alt="">
+              <p>平均驻留</p>
+            </div>
+            <ul>
+              <li><span>{{mapService.dayViewData?.stay?.val}}</span>分钟</li>
+              <li>同升：{{mapService.dayViewData?.stay?.rate}}%</li>
+              <li>排名：{{mapService.dayViewData?.stay?.rank}}</li>
+            </ul>
+            <div class="line"></div>
+          </div>
+          <div class="panel">
+            <div class="icon">
+              <img src="../../assets/images/pjnl_icon.png" alt="">
+              <p>平均年龄</p>
+            </div>
+            <ul>
+              <li><span>{{mapService.dayViewData?.age?.val}}</span>岁</li>
+              <li>历史分布：</li>
+              <li *ngFor="let item of mapService.dayViewData?.age?.list">{{item._id}}：{{item.count * 100 / mapService.dayViewData?.age?.sumList | number: '1.0-0'}}%</li>
+            </ul>
+            <div class="line"></div>
+          </div>
+          <div class="panel">
+            <div class="icon">
+              <img src="../../assets/images/nvblicon.png" alt="">
+              <p>男女比例</p>
+            </div>
+            <ul>
+              <li><span>
+                {{mapService.dayViewData?.gender?.sumVal === 0 ? 0 : mapService.dayViewData?.gender?.mcount * 100 / mapService.dayViewData?.gender?.sumVal | number: '1.0-0'}}:
+                {{mapService.dayViewData?.gender?.sumVal === 0 ? 0 : mapService.dayViewData?.gender?.fcount * 100 / mapService.dayViewData?.gender?.sumVal | number: '1.0-0'}}
+              </span><span class="little">(男:女)</span></li>
+              <li>历史分布：</li>
+              <li *ngFor="let item of mapService.dayViewData?.gender?.list">
+                {{item._id === 'F' ? '女' : '男'}}：{{item.count * 100 / mapService.dayViewData?.gender?.sumList | number: '1.0-0'}}%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

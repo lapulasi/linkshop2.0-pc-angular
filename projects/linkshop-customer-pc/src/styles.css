@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css";
+@import "assets/css/page.css";
+@import "assets/css/common.css";
+@import "assets/css/login.css";
+
+.sort_both{
+  float: left;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 4px;
+  background: url('assets/images/sort_both.png');
+}
+.sort_asc{
+  float: left;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 4px;
+  background: url('assets/images/sort_asc.png');
+}
+.sort_des{
+  float: left;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 4px;
+  background: url('assets/images/sort_desc.png');
+}
+
+.bubble_map {
+  width: 40px;
+  height: 44px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  display: table;
+  margin: 0 auto;
+  background: url("assets/images/bubble.png");
+  background-position: center;
+  background-size: cover;
+}
+
+
+

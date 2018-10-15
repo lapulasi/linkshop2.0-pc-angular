@@ -1,0 +1,38 @@
+<div class="filter-org">
+  <div class="row side-space">
+    <button class="btn btn-primary col-1" (click)="selectOrg(staticModal)">筛选组织</button>
+    <input type="text"
+           class="form-control col-1 start-date"
+           bsDatepicker
+           [maxDate]="date.end"
+           [bsValue]="date.start" (bsValueChange)="startDateChange($event)"
+           [bsConfig]="{dateInputFormat: 'YYYY-MM-DD'}">
+    <p>-------</p>
+    <!--<input type="text" class="form-control col-1">-->
+    <input type="text"
+           class="form-control col-1"
+           bsDatepicker
+           [minDate]="date.start"
+           [bsValue]="date.end" (bsValueChange)="endDateChange($event)"
+           [bsConfig]="{dateInputFormat: 'YYYY-MM-DD'}">
+  </div>
+</div>
+
+
+<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
+     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--<h4 class="modal-title pull-left">{{companyName}}</h4>-->
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide();">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-org-tree [companyId]="org.code" (change)="getOrgInfo($event, staticModal)"></app-org-tree>
+        <!--<app-org-tree [companyId]="org.code" (change)="getOrgInfo($event, staticModal)"></app-org-tree>-->
+      </div>
+    </div>
+  </div>
+</div>

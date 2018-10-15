@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+input, button, select, textarea {
+  /*去掉表单元素点击时的背景色*/
+  outline: none; }
+
+input, button {
+  font-family: "Arial", "微软雅黑";
+  border: none; }
+
+ul, ol li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  /*去掉a标签点击时的背景*/
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none; }
+
+img {
+  vertical-align: bottom; }
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  font-size: 14px;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", 微软雅黑, "Segoe UI", Tahoma, 宋体b8b体, SimSun, sans-serif;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1626;
+  width: 100%;
+  height: 100%; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  min-width: 943px; }
+
+.header {
+  width: 100%;
+  height: 72px;
+  line-height: 1;
+  overflow: hidden; }
+  .header .logo {
+    width: 491px;
+    float: left;
+    margin-left: 10px; }
+    .header .logo img {
+      float: left;
+      width: 239px;
+      height: 33px;
+      margin-top: 18px; }
+    .header .logo p {
+      font-family: PingFang-SC-Regular;
+      font-size: 20px;
+      line-height: 72px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 2px;
+      color: #ffffff;
+      float: left;
+      margin-left: 26px; }
+  .header .nav {
+    margin-left: 491px;
+    margin-right: 491px; }
+    .header .nav ul {
+      display: table;
+      margin: 0 auto;
+      font-size: 20px; }
+      .header .nav ul > li {
+        float: left;
+        line-height: 70px;
+        color: #b2c2d3;
+        cursor: pointer; }
+        .header .nav ul > li ol li:first-child {
+          line-height: 70px; }
+        .header .nav ul > li ol li:last-child {
+          width: 30px;
+          height: 0;
+          border-bottom: 2px solid transparent; }
+        .header .nav ul > li:first-child {
+          margin-right: 60px; }
+          .header .nav ul > li:first-child ol li:last-child {
+            margin-left: 5px; }
+        .header .nav ul > li:last-child ol li:last-child {
+          margin-left: 25px; }
+        .header .nav ul > li.active {
+          color: #42a9f2; }
+          .header .nav ul > li.active ol li:last-child {
+            border-bottom: 2px solid #42a9f2; }
+  .header .user {
+    width: 491px;
+    float: right; }
+    .header .user ul {
+      float: right;
+      margin-right: 60px;
+      color: #fff;
+      overflow: hidden;
+      font-size: 18px;
+      line-height: 72px; }
+      .header .user ul li {
+        float: right; }
+        .header .user ul li:nth-child(2) {
+          margin: 0 20px 0 10px; }
+        .header .user ul li:last-child:hover {
+          cursor: pointer; }
+
+.hidden {
+  display: none; }
+
+.show {
+  display: block; }
+
+.red {
+  color: #ec3c60 !important; }
+
+.fl {
+  float: left; }
+
+.rl {
+  float: right; }
+
+.anchorBL {
+  display: none; }
+
+.BMap_cpyCtrl {
+  display: none; }
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  -webkit-text-fill-color: #ededed !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;
+  background-color: transparent;
+  background-image: none;
+  transition: background-color 50000s ease-in-out 0s; }
+
+input {
+  background-color: transparent; }
+
+/*# sourceMappingURL=common.css.map */

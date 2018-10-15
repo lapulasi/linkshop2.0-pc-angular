@@ -1,0 +1,144 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-body">
+      <div class="form-group row">
+        <div class="col-4 row">
+          <label class="col-3 col-form-label">选择组织：</label>
+          <div class="col-6">
+            <input type="text" class="form-control" [(ngModel)]="orgName" (focus)="selectOrg(staticModal)">
+          </div>
+        </div>
+
+        <div class="col-4 row">
+          <label class="col-3 col-form-label">指标选择：</label>
+          <div class="col-6">
+            <select class="form-control" [(ngModel)]="targetModel" (ngModelChange)="onTargetChange($event)">
+              <option [value]="1">客流</option>
+              <option [value]="2">平均驻留时间</option>
+              <option [value]="3">集客力</option>
+              <option [value]="4">性别</option>
+              <option [value]="5">年龄</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-4 row">
+          <label class="col-3 col-form-label">选择时间：</label>
+          <div class="col-6">
+            <input type="text"
+                   placeholder="请选择时间"
+                   class="form-control"
+                   bsDaterangepicker [(ngModel)]="bsRangeValue"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-4 row">
+          <label class="col-3 col-form-label">展示维度：</label>
+          <div class="col-6">
+            <select class="form-control" [disabled]="!isTarget" [(ngModel)]="dimensionModel"
+                    (ngModelChange)="onDimensionChange($event)">
+              <option [value]="1">按时间</option>
+              <option [value]="2">按组织</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-4 row" *ngIf="isShowTime">
+          <label class="col-3 col-form-label">时间粒度：</label>
+          <div class="col-6">
+            <select class="form-control" [(ngModel)]="timeGranularity" [disabled]="!isTarget"
+                    (ngModelChange)="onTimeChange($event)">
+              <option [value]="1">按日</option>
+              <option [value]="2">按周</option>
+              <option [value]="3">按月</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-4 row" *ngIf="!isShowTime" >
+          <label class="col-3 col-form-label">组织粒度：</label>
+          <div class="col-6">
+            <select class="form-control" [disabled]="!isOrg" [(ngModel)]="orgGranularity"
+                    (ngModelChange)="onOrgGranuChange($event)">
+              <option [value]="currIndex" *ngFor="let i of levelData; index as currIndex">{{i.name}}</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-4 row">
+          <label class="col-3 col-form-label">模型展示：</label>
+          <div class="col-6">
+            <select class="form-control" [(ngModel)]="chartStyle" (ngModelChange)="onChartChange($event)">
+              <option [value]="1">折线图</option>
+              <option [value]="2">柱形图</option>
+              <option [value]="3">饼状图</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+
+      </div>
+
+      <div class="form-group row">
+        <div class="col-4 row">
+          <label class="col-3 col-form-label"></label>
+          <div class="col-3">
+            <button class="btn btn-primary col-12" (click)="checkData()">查询</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row marginTop">
+        <div class="col-2"></div>
+        <div class="chart-wrapper col-8">
+          <canvas *ngIf="isLine" #baseChart="base-chart" baseChart class="chart"
+                  [data]="lineChartData"
+                  [labels]="lineChartLabels"
+                  [options]="lineChartOptions"
+                  [colors]="lineChartColours"
+                  [legend]="lineChartLegend"
+                  [chartType]="lineChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+          <canvas *ngIf="isBar" baseChart class="chart"
+                  [data]="barChartData"
+                  [labels]="barChartLabels"
+                  [options]="barChartOptions"
+                  [legend]="barChartLegend"
+                  [chartType]="barChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+          <canvas *ngIf="isPie" baseChart class="chart"
+                  [data]="pieChartData"
+                  [labels]="pieChartLabels"
+                  [chartType]="pieChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
+     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--<h4 class="modal-title pull-left">{{companyName}}</h4>-->
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide();">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-org-tree [companyId]="companyId" (change)="getOrgInfo($event, staticModal)"></app-org-tree>
+      </div>
+    </div>
+  </div>
+</div>

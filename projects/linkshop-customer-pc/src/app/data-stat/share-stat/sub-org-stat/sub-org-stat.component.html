@@ -1,0 +1,76 @@
+<div class="row title">
+  <div class="col-sm-4">区域表现</div>
+  <div class="col-sm-3"></div>
+<div class="form-group col-sm-4 m-1">
+  <select class="form-control" [(ngModel)]="levelId" (ngModelChange)="onLevelIdChange($event)">
+    <option *ngFor="let item of levelList$ | async" [value]="item.id">{{item.name}}</option>
+  </select>
+</div>
+
+</div>
+<div class="row area-table">
+  <table class="table guest-table" *ngIf="page === 'guest'">
+    <thead class="thead-light">
+    <tr>
+      <th scope="col">排名</th>
+      <th scope="col">名称</th>
+      <th scope="col" *ngFor="let item of guestTable" (click)="sortEvent(item.val)"><span>{{item.name}}</span>
+        <span [ngClass]="{'sort_both': sortCond.field !== item.val, 'sort_des': sortCond.field === item.val && sortCond.type === 'desc', 'sort_asc': sortCond.field === item.val && sortCond.type === 'asc'}"></span>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of resultList$ | async; index as i">
+      <td>{{i + 1}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.data.guestCount}}</td>
+      <td>{{item.data.guestCount === 0 ? 0 : item.data.guestStayTime / item.data.guestCount | number: '1.0-0'}}</td>
+      <td>{{item.data.allShopArea === 0 ? 0 : item.data.guestCount / item.data.allShopArea | number: '1.0-0'}}</td>
+      <td>{{item.data.allShopArea === 0 ? 0 : item.data.allAmount / item.data.allShopArea | number: '1.0-0'}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table sales-table" *ngIf="page === 'sales'">
+    <thead class="thead-light">
+    <tr>
+      <th scope="col">排名</th>
+      <th scope="col">名称</th>
+      <th scope="col" *ngFor="let item of salesTable" (click)="sortEvent(item.val)"><span>{{item.name}}</span>
+        <span [ngClass]="{'sort_both': sortCond.field !== item.val, 'sort_des': sortCond.field === item.val && sortCond.type === 'desc', 'sort_asc': sortCond.field === item.val && sortCond.type === 'asc'}"></span>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of resultList$ | async; index as i">
+      <td>{{i + 1}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.data.allVolume}}</td>
+      <td>{{item.data.allAmount}}</td>
+      <td>{{item.data.guestCount === 0 ? 0 : item.data.allAmount / item.data.guestCount | number: '1.0-2'}}</td>
+      <td>{{item.data.guestCount === 0 ? 0 : item.data.allVolume * 100 / item.data.guestCount | number: '1.0-0'}}%</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table device-table" *ngIf="page === 'device'">
+    <thead class="thead-light">
+    <tr>
+      <th scope="col">排名</th>
+      <th scope="col">名称</th>
+      <th scope="col" *ngFor="let item of deviceTable" (click)="sortEvent(item.val)"><span>{{item.name}}</span>
+        <span [ngClass]="{'sort_both': sortCond.field !== item.val, 'sort_des': sortCond.field === item.val && sortCond.type === 'desc', 'sort_asc': sortCond.field === item.val && sortCond.type === 'asc'}"></span>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of resultList$ | async; index as i">
+      <td>{{i + 1}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.data.deviceNum}}</td>
+      <td>{{(item.data.goodDeviceNum + item.data.brokenDeviceNum) === 0 ? 0 : item.data.goodDeviceNum * 100 / (item.data.goodDeviceNum + item.data.brokenDeviceNum) | number: '1.0-0'}}%</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

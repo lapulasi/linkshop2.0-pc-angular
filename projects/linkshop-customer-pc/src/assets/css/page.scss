@@ -1,0 +1,808 @@
+$gray3: #333;
+$gray6: #666;
+$gray9: #999;
+$borderColor: #eee;
+$fff: #fff;
+
+$font_size18: 18px;
+$font_size20: 20px;
+$font_size24: 24px;
+$font_size26: 26px;
+
+@mixin border() {
+  border: 1px solid $borderColor;
+}
+
+@mixin borderDir($dir, $width: 1px, $color: $borderColor) {
+  border-#{$dir}: $width solid $color;
+}
+
+@mixin font($size: $font_size14, $height: $font_size14) {
+  font-size: $size;
+  @media screen and (min-width: 1360px) {
+    $scale: 768/1080;
+    @if($size == $height){
+      line-height: $height;
+    }@else {
+      line-height: $height*$scale;
+    }
+  }
+  @media screen and (min-width: 1366px) {
+    $scale: 768/1080;
+    @if($size == $height){
+      line-height: $height;
+    }@else {
+      line-height: $height*$scale;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    $scale: 1050/1080;
+    @if($size == $height){
+      line-height: $height;
+    }@else {
+      line-height: $height*$scale;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    $scale: 900/1080;
+    @if($size == $height){
+      line-height: $height;
+    }@else {
+      line-height: $height*$scale;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    $scale: 900/1080;
+    @if($size == $height){
+      line-height: $height;
+    }@else {
+      line-height: $height*$scale;
+    }
+  }
+  @media screen and (min-width: 1680px) {
+    $scale: 1050/1080;
+    @if($size == $height){
+      line-height: $height;
+    }@else {
+      line-height: $height*$scale;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    $scale: 1;
+    @if($size == $height){
+      line-height: $height;
+    }@else {
+      line-height: $height*$scale;
+    }
+  }
+  @media screen and (min-width: 2048px) {
+    $scale: 1152/1080;
+    @if($size == $height){
+      line-height: $height;
+    }@else {
+      line-height: $height*$scale;
+    }
+  }
+  @media screen and (min-width: 2560px) {
+    $scale: 1440/1080;
+    @if($size == $height){
+      line-height: $height;
+    }@else {
+      line-height: $height*$scale;
+    }
+  }
+}
+
+@mixin blockArea() {
+  background: $fff;
+}
+
+@mixin changeHeight($height: 0, $top: 0, $bottom: 0) {
+  @media screen and (min-width: 1160px) {
+    $scale: 768/1080;
+    @if($height == 'auto') {
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else if($height == 100%){
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else {
+      height: $height*$scale;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }
+
+  }
+
+  @media screen and (min-width: 1366px) {
+    $scale: 768/1080;
+    @if($height == 'auto') {
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else if($height == 100%){
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else {
+      height: $height*$scale;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }
+
+  }
+  @media screen and (min-width: 1400px) {
+    $scale: 1050/1080;
+    @if($height == 'auto') {
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else if($height == 100%){
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else {
+      height: $height*$scale;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    $scale: 900/1080;
+    @if($height == 'auto') {
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else if($height == 100%){
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else {
+      height: $height*$scale;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    $scale: 900/1080;
+    @if($height == 'auto') {
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else if($height == 100%){
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else {
+      height: $height*$scale;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }
+  }
+  @media screen and (min-width: 1680px) {
+    $scale: 1050/1080;
+    @if($height == 'auto') {
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else if($height == 100%){
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else {
+      height: $height*$scale;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    $scale: 1;
+    @if($height == 'auto') {
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else if($height == 100%){
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else {
+      height: $height*$scale;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }
+  }
+  @media screen and (min-width: 2048px) {
+    $scale: 1152/1080;
+    @if($height == 'auto') {
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else if($height == 100%){
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else {
+      height: $height*$scale;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }
+  }
+  @media screen and (min-width: 2560px) {
+    $scale: 1440/1080;
+    @if($height == 'auto') {
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else if($height == 100%){
+      height: $height;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }@else {
+      height: $height*$scale;
+      margin-top: $top*$scale;
+      margin-bottom: $bottom*$scale;
+    }
+  }
+}
+
+.container-fluid{
+  width: calc(100% - 68px)!important;
+  margin-left: 68px!important;
+  margin-top: 62px;
+  float: left;
+}
+
+.side-space {
+  padding: 0 1.2%;
+}
+
+.filter-org {
+  height: 80px;
+  overflow: hidden;
+  > div {
+    margin-top: 20px;
+    p {
+      width: 60px;
+      text-align: center;
+      color: #6c757d;
+      margin-bottom: 0;
+      margin-top: 6px;
+    }
+    .start-date {
+      margin-left: 20px;
+    }
+  }
+}
+
+.area-trend {
+  @include borderDir(top);
+  @include borderDir(bottom);
+  .title {
+    @include font($font_size20, 44px);
+    color: $gray3;
+    margin-left: 10px;
+  }
+  .area {
+    @include borderDir(right, 10px);
+    @include blockArea;
+    .area-table {
+      margin: 0 10px;
+    }
+  }
+  .trend {
+    @include blockArea;
+    button {
+      height: 40px;
+      margin: 9px 10px;
+      &.current{
+        background: #6c757d;
+        color: $fff;
+      }
+    }
+  }
+}
+
+.area-table {
+  overflow-y: scroll;
+  height: 383px;
+  padding-bottom: 10px;
+  span {
+    float: left;
+  }
+  .tips-up {
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 4px;
+    background: url('../images/tips-up.png');
+  }
+  .guest-table{
+    color: $gray3;
+    thead{
+      th{
+        &:first-child{
+          width: 11%;
+        }
+        &:nth-child(2){
+          width: 27%;
+        }
+        &:nth-child(3), &:nth-child(4), &:nth-child(6){
+          width: 15%;
+        }
+        &:nth-child(5) {
+          width: 17%;
+        }
+      }
+    }
+  }
+  .sales-table{
+    color: $gray3;
+    thead{
+      th{
+        &:first-child{
+          width: 11%;
+        }
+        &:nth-child(2){
+          width: 25%;
+        }
+        &:nth-child(3), &:nth-child(4){
+          width: 15%;
+        }
+        &:nth-child(5), &:nth-child(6) {
+          width: 17%;
+        }
+      }
+    }
+  }
+  .device-table{
+    color: $gray3;
+    thead{
+      th{
+        &:first-child{
+          width: 16%;
+        }
+        &:nth-child(2){
+          width: 28%;
+        }
+        &:nth-child(3){
+          width: 28%;
+        }
+        &:nth-child(4) {
+          width: 28%;
+        }
+      }
+    }
+  }
+}
+
+.eaharts {
+  margin-top: 10px;
+  > div {
+    @include borderDir(right, 9px);
+    @include blockArea;
+    &:last-child{
+      border: none;
+    }
+  }
+  &:last-child{
+    margin-bottom: 40px;
+  }
+}
+
+.echarts-area {
+  height: 400px;
+
+}
+
+.eaharts-title {
+  height: 40px;
+  @include font($font_size20, 44px);
+  color: $gray3;
+  margin-left: 10px;
+}
+
+.trend-analysis {
+  width: 100%;
+  margin-right: 20px;
+  height: 393px;
+}
+
+.index {
+  height: 100%;
+  background-color: #0f1626;
+  border: 1px solid #0f1626;
+}
+
+.top {
+  width: 100%;
+  //height: 62px;
+  @include changeHeight(62px);
+  background-color: #0f1626;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  .logo {
+    width: 488px;
+    overflow: hidden;
+    float: left;
+    @include font(18px, 28px);
+    li {
+      float: left;
+      &:first-child {
+        margin-left: 10px;
+      }
+      &:last-child {
+        color: $fff;
+        //margin-top: 17px;
+        @include changeHeight(auto, 17px);
+        margin-left: 22px;
+      }
+    }
+    img {
+      width: 218px;
+      //height: 29px;
+      //margin-top: 16px;
+      @include changeHeight(29px, 16px);
+    }
+  }
+  .org-name {
+    margin: 0 420px 0 488px;
+    @include font(24px, 62px);
+    @include changeHeight(62px);
+    text-align: center;
+    background: url("../images/top-bg.png") center;
+    overflow: hidden;
+  }
+  .user-info {
+    width: 420px;
+    float: right;
+    @include font(16px, 28px);
+    //margin-top: 17px;
+    @include changeHeight(auto, 17px);
+    li {
+      float: right;
+      a {
+        color: $fff;
+        text-decoration: underline;
+      }
+      &:nth-child(2) {
+        margin: 0 10px;
+      }
+      &:first-child {
+        margin-right: 24px;
+      }
+      &:last-child {
+        margin-right: 10px;
+        cursor: pointer;
+        width: 20px;
+        //height: 20px;
+        //margin-top: 4px;
+        @include changeHeight(26px, 2px);
+        background: url("../images/fullScrenn.png") center center no-repeat;
+      }
+      &.quit-screen{
+        width: 20px;
+        /*height: 20px;
+        margin-top: 4px;*/
+        @include changeHeight(26px, 2px);
+        background: url("../images/quitFullScrenn.png") center center no-repeat;
+      }
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  overflow: hidden;
+  //margin-top: 62px;
+  @include changeHeight(auto, 62px);
+  /*padding-bottom: 28px!important;
+  padding-top: 62px!important;*/
+  background-color: #0c121f;
+  .side-left {
+    width: 400px;
+    float: left;
+    margin-left: 88px;
+    .content {
+      float: left;
+    }
+  }
+  .side-right {
+    width: 420px;
+    float: right;
+  }
+  .map-area {
+    margin: 0 420px 0 488px;
+    @include changeHeight(auto, 20px);
+  }
+}
+
+.side-bar {
+  width: 68px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  //margin-top: 62px;
+  @include changeHeight(100%, 62px);
+  background-color: #0c121f;
+  z-index: 2;
+  box-sizing: border-box;
+  li {
+    height: 80px;
+    border-left: 4px solid rgba(12, 18, 31, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    .icon {
+      float: left;
+      width: 26px;
+      height: 26px;
+      margin: 27px 19px;
+    }
+
+    .icon0 {
+      background-image: url("../images/icon0-g.png");
+    }
+
+    .icon1 {
+      background-image: url("../images/icon1-g.png");
+    }
+
+    .icon2 {
+      background-image: url("../images/icon2-g.png");
+    }
+
+    .icon3 {
+      background-image: url("../images/icon3-g.png");
+    }
+
+    .icon4 {
+      background-image: url("../images/icon4-g.png");
+    }
+
+    .icon5 {
+      background-image: url("../images/icon5-g.png");
+    }
+    &.current {
+      border-left: 4px solid #41b0ff;
+      background-color: rgba(65, 176, 255, 0.1);
+      .icon0 {
+        background-image: url("../images/icon0-b.png");
+      }
+      .icon1 {
+        background-image: url("../images/icon1-b.png");
+      }
+      .icon2 {
+        background-image: url("../images/icon2-b.png");
+      }
+      .icon3 {
+        background-image: url("../images/icon3-b.png");
+      }
+      .icon4 {
+        background-image: url("../images/icon4-b.png");
+      }
+      .icon5 {
+        background-image: url("../images/icon5-b.png");
+      }
+    }
+  }
+}
+
+@mixin span-border($dir) {
+  border-#{$dir}: 3px solid #42a9f2;
+}
+
+@mixin border-style($width, $height) {
+  width: $width;
+  /*height: $height;
+  margin-top: 20px;*/
+  @include changeHeight($height, 20px);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(#2f4979, 1) inset;
+  box-shadow: 0px 0px 10px 2px rgba(#2f4979, 1) inset;
+  position: relative;
+  border: 1px solid #2f4979;
+  > span {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    &.left-top {
+      left: 0;
+      top: 0;
+      @include span-border(left);
+      @include span-border(top);
+    }
+    &.right-top {
+      right: 0;
+      top: 0;
+      @include span-border(top);
+      @include span-border(right);
+    }
+    &.right-bottom {
+      right: 0;
+      bottom: 0;
+      @include span-border(right);
+      @include span-border(bottom);
+    }
+    &.left-bottom {
+      left: 0;
+      bottom: 0;
+      @include span-border(left);
+      @include span-border(bottom);
+    }
+  }
+}
+
+.content-title {
+  //height: 54px;
+  @include changeHeight(54px);
+  @include borderDir(bottom);
+  border-color: #2f4979;
+  @include font(18px, 54px);
+  text-indent: 1.4em;
+}
+
+@mixin data-panel($width) {
+  //margin-top: 44px;
+  @include changeHeight(auto, 44px);
+  li {
+    width: $width;
+    //height: 65px;
+    @include changeHeight(65px);
+    float: left;
+    border-right: 1px solid #2f4979;
+    &:last-child {
+      border-right: none;
+    }
+    span {
+      &:first-child {
+        @include font(16px, 28px);
+        color: #bbbec3;
+        //margin-top: -9px;
+        @include changeHeight(auto, -9px);
+      }
+      &:last-child {
+        @include font(36px, 28px);
+        color: #41b0ff;
+        //margin-top: 27px;
+        @include changeHeight(auto, 27px);
+      }
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@mixin panel($height) {
+  @include border-style(400px, $height);
+}
+
+.passager-flow {
+  @include panel(208px); // 面板总高
+  .data-panel {
+    @include data-panel(132px); // 列表宽度
+  }
+}
+
+.gender-radio, .average-age{
+  @include panel(208px); // 面板总高
+  .data-panel {
+    @include data-panel(198px); // 列表宽度
+  }
+}
+.flow-time, .collect-power, .ping{
+  @include panel(228px); // 面板总高
+  .data-panel {
+    @include data-panel(198px); // 列表宽度
+  }
+}
+.sales{
+  @include panel(226px); // 面板总高
+  .data-panel {
+    @include data-panel(198px); // 列表宽度
+  }
+}
+
+.age-gender-radio {
+  @include panel(286px); // 面板总高
+  .data-panel {
+    @include data-panel(198px); // 列表宽度
+  }
+  .data-panel {
+    //margin-top: 81px;
+    @include changeHeight(auto, 81px);
+    li {
+      span {
+        //margin-bottom: 13px;
+        @include changeHeight(auto, 13px);
+        &:first-child {
+          /*margin-top: -54px;
+          margin-bottom: 18px;*/
+          @include changeHeight(auto, -54px, 18px);
+        }
+        &:last-child {
+          font-size: 16px;
+          color: $fff;
+          //margin-top: 21px;
+          @include changeHeight(auto, 10px);
+        }
+      }
+    }
+  }
+}
+
+.map-area {
+  position: relative;
+  .btns{
+    width: 100%;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+  .back-btn{
+    width: 62px;
+    height: 62px;
+    background-color: #020a1c;
+    border: solid 1px #2f4979;
+    -moz-box-shadow: 0px 0px 10px 1px rgba(#41b0ff, 1) inset;
+    box-shadow: 0px 0px 10px 1px rgba(#41b0ff, 1) inset;
+    //@include font(16px, 60px);
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    right: 40px;
+    top: 64px;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .button {
+    width: 120px;
+    height: 44px;
+    background-color: #020a1c;
+    border-radius: 6px;
+    border: solid 1px #2f518e;
+    float: left;
+    margin-left: 40px;
+    -moz-box-shadow: 0px 0px 10px 1px rgba(#41b0ff, 1) inset;
+    box-shadow: 0px 0px 10px 1px rgba(#41b0ff, 1) inset;
+    &:last-child{
+      float: right;
+      margin-right: 40px;
+    }
+    li {
+      float: left;
+      &:first-child {
+        margin-left: 13px;
+        //@include font(16px, 42px);
+        font-size: 16px;
+        line-height: 42px;
+      }
+      &:last-child {
+        float: right;
+        margin-right: 13px;
+        width: 10px;
+        height: 16px;
+        background-image: url("../images/tips.png");
+        margin-top: 14px;
+        span {
+          display: block;
+          width: 20px;
+          height: 21px;
+          cursor: pointer;
+          &:first-child{
+            margin-top: -14px;
+          }
+        }
+      }
+    }
+  }
+  .map{
+    //background: url("../images/map.png") center;
+    //height: 970px;
+    @include changeHeight(970px);
+  }
+}

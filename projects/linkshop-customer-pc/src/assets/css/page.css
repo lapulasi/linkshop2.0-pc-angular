@@ -1,0 +1,2818 @@
+.container-fluid {
+  width: calc(100% - 68px) !important;
+  margin-left: 68px !important;
+  margin-top: 62px;
+  float: left; }
+
+.side-space {
+  padding: 0 1.2%; }
+
+.filter-org {
+  height: 80px;
+  overflow: hidden; }
+  .filter-org > div {
+    margin-top: 20px; }
+    .filter-org > div p {
+      width: 60px;
+      text-align: center;
+      color: #6c757d;
+      margin-bottom: 0;
+      margin-top: 6px; }
+    .filter-org > div .start-date {
+      margin-left: 20px; }
+
+.area-trend {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+  .area-trend .title {
+    font-size: 20px;
+    color: #333;
+    margin-left: 10px; }
+    @media screen and (min-width: 1360px) {
+      .area-trend .title {
+        line-height: 31.2888888889px; } }
+    @media screen and (min-width: 1366px) {
+      .area-trend .title {
+        line-height: 31.2888888889px; } }
+    @media screen and (min-width: 1400px) {
+      .area-trend .title {
+        line-height: 42.7777777778px; } }
+    @media screen and (min-width: 1440px) {
+      .area-trend .title {
+        line-height: 36.6666666667px; } }
+    @media screen and (min-width: 1600px) {
+      .area-trend .title {
+        line-height: 36.6666666667px; } }
+    @media screen and (min-width: 1680px) {
+      .area-trend .title {
+        line-height: 42.7777777778px; } }
+    @media screen and (min-width: 1920px) {
+      .area-trend .title {
+        line-height: 44px; } }
+    @media screen and (min-width: 2048px) {
+      .area-trend .title {
+        line-height: 46.9333333333px; } }
+    @media screen and (min-width: 2560px) {
+      .area-trend .title {
+        line-height: 58.6666666667px; } }
+  .area-trend .area {
+    border-right: 10px solid #eee;
+    background: #fff; }
+    .area-trend .area .area-table {
+      margin: 0 10px; }
+  .area-trend .trend {
+    background: #fff; }
+    .area-trend .trend button {
+      height: 40px;
+      margin: 9px 10px; }
+      .area-trend .trend button.current {
+        background: #6c757d;
+        color: #fff; }
+
+.area-table {
+  overflow-y: scroll;
+  height: 383px;
+  padding-bottom: 10px; }
+  .area-table span {
+    float: left; }
+  .area-table .tips-up {
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 4px;
+    background: url("../images/tips-up.png"); }
+  .area-table .guest-table {
+    color: #333; }
+    .area-table .guest-table thead th:first-child {
+      width: 11%; }
+    .area-table .guest-table thead th:nth-child(2) {
+      width: 27%; }
+    .area-table .guest-table thead th:nth-child(3), .area-table .guest-table thead th:nth-child(4), .area-table .guest-table thead th:nth-child(6) {
+      width: 15%; }
+    .area-table .guest-table thead th:nth-child(5) {
+      width: 17%; }
+  .area-table .sales-table {
+    color: #333; }
+    .area-table .sales-table thead th:first-child {
+      width: 11%; }
+    .area-table .sales-table thead th:nth-child(2) {
+      width: 25%; }
+    .area-table .sales-table thead th:nth-child(3), .area-table .sales-table thead th:nth-child(4) {
+      width: 15%; }
+    .area-table .sales-table thead th:nth-child(5), .area-table .sales-table thead th:nth-child(6) {
+      width: 17%; }
+  .area-table .device-table {
+    color: #333; }
+    .area-table .device-table thead th:first-child {
+      width: 16%; }
+    .area-table .device-table thead th:nth-child(2) {
+      width: 28%; }
+    .area-table .device-table thead th:nth-child(3) {
+      width: 28%; }
+    .area-table .device-table thead th:nth-child(4) {
+      width: 28%; }
+
+.eaharts {
+  margin-top: 10px; }
+  .eaharts > div {
+    border-right: 9px solid #eee;
+    background: #fff; }
+    .eaharts > div:last-child {
+      border: none; }
+  .eaharts:last-child {
+    margin-bottom: 40px; }
+
+.echarts-area {
+  height: 400px; }
+
+.eaharts-title {
+  height: 40px;
+  font-size: 20px;
+  color: #333;
+  margin-left: 10px; }
+  @media screen and (min-width: 1360px) {
+    .eaharts-title {
+      line-height: 31.2888888889px; } }
+  @media screen and (min-width: 1366px) {
+    .eaharts-title {
+      line-height: 31.2888888889px; } }
+  @media screen and (min-width: 1400px) {
+    .eaharts-title {
+      line-height: 42.7777777778px; } }
+  @media screen and (min-width: 1440px) {
+    .eaharts-title {
+      line-height: 36.6666666667px; } }
+  @media screen and (min-width: 1600px) {
+    .eaharts-title {
+      line-height: 36.6666666667px; } }
+  @media screen and (min-width: 1680px) {
+    .eaharts-title {
+      line-height: 42.7777777778px; } }
+  @media screen and (min-width: 1920px) {
+    .eaharts-title {
+      line-height: 44px; } }
+  @media screen and (min-width: 2048px) {
+    .eaharts-title {
+      line-height: 46.9333333333px; } }
+  @media screen and (min-width: 2560px) {
+    .eaharts-title {
+      line-height: 58.6666666667px; } }
+
+.trend-analysis {
+  width: 100%;
+  margin-right: 20px;
+  height: 393px; }
+
+.index {
+  height: 100%;
+  background-color: #0f1626;
+  border: 1px solid #0f1626; }
+
+.top {
+  width: 100%;
+  background-color: #0f1626;
+  position: fixed;
+  top: 0;
+  z-index: 3; }
+  @media screen and (min-width: 1160px) {
+    .top {
+      height: 44.0888888889px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .top {
+      height: 44.0888888889px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .top {
+      height: 60.2777777778px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .top {
+      height: 51.6666666667px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .top {
+      height: 51.6666666667px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .top {
+      height: 60.2777777778px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .top {
+      height: 62px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .top {
+      height: 66.1333333333px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .top {
+      height: 82.6666666667px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  .top .logo {
+    width: 488px;
+    overflow: hidden;
+    float: left;
+    font-size: 18px; }
+    @media screen and (min-width: 1360px) {
+      .top .logo {
+        line-height: 19.9111111111px; } }
+    @media screen and (min-width: 1366px) {
+      .top .logo {
+        line-height: 19.9111111111px; } }
+    @media screen and (min-width: 1400px) {
+      .top .logo {
+        line-height: 27.2222222222px; } }
+    @media screen and (min-width: 1440px) {
+      .top .logo {
+        line-height: 23.3333333333px; } }
+    @media screen and (min-width: 1600px) {
+      .top .logo {
+        line-height: 23.3333333333px; } }
+    @media screen and (min-width: 1680px) {
+      .top .logo {
+        line-height: 27.2222222222px; } }
+    @media screen and (min-width: 1920px) {
+      .top .logo {
+        line-height: 28px; } }
+    @media screen and (min-width: 2048px) {
+      .top .logo {
+        line-height: 29.8666666667px; } }
+    @media screen and (min-width: 2560px) {
+      .top .logo {
+        line-height: 37.3333333333px; } }
+    .top .logo li {
+      float: left; }
+      .top .logo li:first-child {
+        margin-left: 10px; }
+      .top .logo li:last-child {
+        color: #fff;
+        margin-left: 22px; }
+        @media screen and (min-width: 1160px) {
+          .top .logo li:last-child {
+            height: auto;
+            margin-top: 12.0888888889px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .top .logo li:last-child {
+            height: auto;
+            margin-top: 12.0888888889px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .top .logo li:last-child {
+            height: auto;
+            margin-top: 16.5277777778px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .top .logo li:last-child {
+            height: auto;
+            margin-top: 14.1666666667px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .top .logo li:last-child {
+            height: auto;
+            margin-top: 14.1666666667px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .top .logo li:last-child {
+            height: auto;
+            margin-top: 16.5277777778px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .top .logo li:last-child {
+            height: auto;
+            margin-top: 17px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .top .logo li:last-child {
+            height: auto;
+            margin-top: 18.1333333333px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .top .logo li:last-child {
+            height: auto;
+            margin-top: 22.6666666667px;
+            margin-bottom: 0; } }
+    .top .logo img {
+      width: 218px; }
+      @media screen and (min-width: 1160px) {
+        .top .logo img {
+          height: 20.6222222222px;
+          margin-top: 11.3777777778px;
+          margin-bottom: 0; } }
+      @media screen and (min-width: 1366px) {
+        .top .logo img {
+          height: 20.6222222222px;
+          margin-top: 11.3777777778px;
+          margin-bottom: 0; } }
+      @media screen and (min-width: 1400px) {
+        .top .logo img {
+          height: 28.1944444444px;
+          margin-top: 15.5555555556px;
+          margin-bottom: 0; } }
+      @media screen and (min-width: 1440px) {
+        .top .logo img {
+          height: 24.1666666667px;
+          margin-top: 13.3333333333px;
+          margin-bottom: 0; } }
+      @media screen and (min-width: 1600px) {
+        .top .logo img {
+          height: 24.1666666667px;
+          margin-top: 13.3333333333px;
+          margin-bottom: 0; } }
+      @media screen and (min-width: 1680px) {
+        .top .logo img {
+          height: 28.1944444444px;
+          margin-top: 15.5555555556px;
+          margin-bottom: 0; } }
+      @media screen and (min-width: 1920px) {
+        .top .logo img {
+          height: 29px;
+          margin-top: 16px;
+          margin-bottom: 0; } }
+      @media screen and (min-width: 2048px) {
+        .top .logo img {
+          height: 30.9333333333px;
+          margin-top: 17.0666666667px;
+          margin-bottom: 0; } }
+      @media screen and (min-width: 2560px) {
+        .top .logo img {
+          height: 38.6666666667px;
+          margin-top: 21.3333333333px;
+          margin-bottom: 0; } }
+  .top .org-name {
+    margin: 0 420px 0 488px;
+    font-size: 24px;
+    text-align: center;
+    background: url("../images/top-bg.png") center;
+    overflow: hidden; }
+    @media screen and (min-width: 1360px) {
+      .top .org-name {
+        line-height: 44.0888888889px; } }
+    @media screen and (min-width: 1366px) {
+      .top .org-name {
+        line-height: 44.0888888889px; } }
+    @media screen and (min-width: 1400px) {
+      .top .org-name {
+        line-height: 60.2777777778px; } }
+    @media screen and (min-width: 1440px) {
+      .top .org-name {
+        line-height: 51.6666666667px; } }
+    @media screen and (min-width: 1600px) {
+      .top .org-name {
+        line-height: 51.6666666667px; } }
+    @media screen and (min-width: 1680px) {
+      .top .org-name {
+        line-height: 60.2777777778px; } }
+    @media screen and (min-width: 1920px) {
+      .top .org-name {
+        line-height: 62px; } }
+    @media screen and (min-width: 2048px) {
+      .top .org-name {
+        line-height: 66.1333333333px; } }
+    @media screen and (min-width: 2560px) {
+      .top .org-name {
+        line-height: 82.6666666667px; } }
+    @media screen and (min-width: 1160px) {
+      .top .org-name {
+        height: 44.0888888889px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1366px) {
+      .top .org-name {
+        height: 44.0888888889px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1400px) {
+      .top .org-name {
+        height: 60.2777777778px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1440px) {
+      .top .org-name {
+        height: 51.6666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1600px) {
+      .top .org-name {
+        height: 51.6666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1680px) {
+      .top .org-name {
+        height: 60.2777777778px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1920px) {
+      .top .org-name {
+        height: 62px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2048px) {
+      .top .org-name {
+        height: 66.1333333333px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2560px) {
+      .top .org-name {
+        height: 82.6666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+  .top .user-info {
+    width: 420px;
+    float: right;
+    font-size: 16px; }
+    @media screen and (min-width: 1360px) {
+      .top .user-info {
+        line-height: 19.9111111111px; } }
+    @media screen and (min-width: 1366px) {
+      .top .user-info {
+        line-height: 19.9111111111px; } }
+    @media screen and (min-width: 1400px) {
+      .top .user-info {
+        line-height: 27.2222222222px; } }
+    @media screen and (min-width: 1440px) {
+      .top .user-info {
+        line-height: 23.3333333333px; } }
+    @media screen and (min-width: 1600px) {
+      .top .user-info {
+        line-height: 23.3333333333px; } }
+    @media screen and (min-width: 1680px) {
+      .top .user-info {
+        line-height: 27.2222222222px; } }
+    @media screen and (min-width: 1920px) {
+      .top .user-info {
+        line-height: 28px; } }
+    @media screen and (min-width: 2048px) {
+      .top .user-info {
+        line-height: 29.8666666667px; } }
+    @media screen and (min-width: 2560px) {
+      .top .user-info {
+        line-height: 37.3333333333px; } }
+    @media screen and (min-width: 1160px) {
+      .top .user-info {
+        height: auto;
+        margin-top: 12.0888888889px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1366px) {
+      .top .user-info {
+        height: auto;
+        margin-top: 12.0888888889px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1400px) {
+      .top .user-info {
+        height: auto;
+        margin-top: 16.5277777778px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1440px) {
+      .top .user-info {
+        height: auto;
+        margin-top: 14.1666666667px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1600px) {
+      .top .user-info {
+        height: auto;
+        margin-top: 14.1666666667px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1680px) {
+      .top .user-info {
+        height: auto;
+        margin-top: 16.5277777778px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1920px) {
+      .top .user-info {
+        height: auto;
+        margin-top: 17px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2048px) {
+      .top .user-info {
+        height: auto;
+        margin-top: 18.1333333333px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2560px) {
+      .top .user-info {
+        height: auto;
+        margin-top: 22.6666666667px;
+        margin-bottom: 0; } }
+    .top .user-info li {
+      float: right; }
+      .top .user-info li a {
+        color: #fff;
+        text-decoration: underline; }
+      .top .user-info li:nth-child(2) {
+        margin: 0 10px; }
+      .top .user-info li:first-child {
+        margin-right: 24px; }
+      .top .user-info li:last-child {
+        margin-right: 10px;
+        cursor: pointer;
+        width: 20px;
+        background: url("../images/fullScrenn.png") center center no-repeat; }
+        @media screen and (min-width: 1160px) {
+          .top .user-info li:last-child {
+            height: 18.4888888889px;
+            margin-top: 1.4222222222px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .top .user-info li:last-child {
+            height: 18.4888888889px;
+            margin-top: 1.4222222222px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .top .user-info li:last-child {
+            height: 25.2777777778px;
+            margin-top: 1.9444444444px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .top .user-info li:last-child {
+            height: 21.6666666667px;
+            margin-top: 1.6666666667px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .top .user-info li:last-child {
+            height: 21.6666666667px;
+            margin-top: 1.6666666667px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .top .user-info li:last-child {
+            height: 25.2777777778px;
+            margin-top: 1.9444444444px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .top .user-info li:last-child {
+            height: 26px;
+            margin-top: 2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .top .user-info li:last-child {
+            height: 27.7333333333px;
+            margin-top: 2.1333333333px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .top .user-info li:last-child {
+            height: 34.6666666667px;
+            margin-top: 2.6666666667px;
+            margin-bottom: 0; } }
+      .top .user-info li.quit-screen {
+        width: 20px;
+        /*height: 20px;
+        margin-top: 4px;*/
+        background: url("../images/quitFullScrenn.png") center center no-repeat; }
+        @media screen and (min-width: 1160px) {
+          .top .user-info li.quit-screen {
+            height: 18.4888888889px;
+            margin-top: 1.4222222222px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .top .user-info li.quit-screen {
+            height: 18.4888888889px;
+            margin-top: 1.4222222222px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .top .user-info li.quit-screen {
+            height: 25.2777777778px;
+            margin-top: 1.9444444444px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .top .user-info li.quit-screen {
+            height: 21.6666666667px;
+            margin-top: 1.6666666667px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .top .user-info li.quit-screen {
+            height: 21.6666666667px;
+            margin-top: 1.6666666667px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .top .user-info li.quit-screen {
+            height: 25.2777777778px;
+            margin-top: 1.9444444444px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .top .user-info li.quit-screen {
+            height: 26px;
+            margin-top: 2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .top .user-info li.quit-screen {
+            height: 27.7333333333px;
+            margin-top: 2.1333333333px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .top .user-info li.quit-screen {
+            height: 34.6666666667px;
+            margin-top: 2.6666666667px;
+            margin-bottom: 0; } }
+
+.main {
+  width: 100%;
+  overflow: hidden;
+  /*padding-bottom: 28px!important;
+  padding-top: 62px!important;*/
+  background-color: #0c121f; }
+  @media screen and (min-width: 1160px) {
+    .main {
+      height: auto;
+      margin-top: 44.0888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .main {
+      height: auto;
+      margin-top: 44.0888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .main {
+      height: auto;
+      margin-top: 60.2777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .main {
+      height: auto;
+      margin-top: 51.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .main {
+      height: auto;
+      margin-top: 51.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .main {
+      height: auto;
+      margin-top: 60.2777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .main {
+      height: auto;
+      margin-top: 62px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .main {
+      height: auto;
+      margin-top: 66.1333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .main {
+      height: auto;
+      margin-top: 82.6666666667px;
+      margin-bottom: 0; } }
+  .main .side-left {
+    width: 400px;
+    float: left;
+    margin-left: 88px; }
+    .main .side-left .content {
+      float: left; }
+  .main .side-right {
+    width: 420px;
+    float: right; }
+  .main .map-area {
+    margin: 0 420px 0 488px; }
+    @media screen and (min-width: 1160px) {
+      .main .map-area {
+        height: auto;
+        margin-top: 14.2222222222px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1366px) {
+      .main .map-area {
+        height: auto;
+        margin-top: 14.2222222222px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1400px) {
+      .main .map-area {
+        height: auto;
+        margin-top: 19.4444444444px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1440px) {
+      .main .map-area {
+        height: auto;
+        margin-top: 16.6666666667px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1600px) {
+      .main .map-area {
+        height: auto;
+        margin-top: 16.6666666667px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1680px) {
+      .main .map-area {
+        height: auto;
+        margin-top: 19.4444444444px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1920px) {
+      .main .map-area {
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2048px) {
+      .main .map-area {
+        height: auto;
+        margin-top: 21.3333333333px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2560px) {
+      .main .map-area {
+        height: auto;
+        margin-top: 26.6666666667px;
+        margin-bottom: 0; } }
+
+.side-bar {
+  width: 68px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #0c121f;
+  z-index: 2;
+  box-sizing: border-box; }
+  @media screen and (min-width: 1160px) {
+    .side-bar {
+      height: 100%;
+      margin-top: 44.0888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .side-bar {
+      height: 100%;
+      margin-top: 44.0888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .side-bar {
+      height: 100%;
+      margin-top: 60.2777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .side-bar {
+      height: 100%;
+      margin-top: 51.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .side-bar {
+      height: 100%;
+      margin-top: 51.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .side-bar {
+      height: 100%;
+      margin-top: 60.2777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .side-bar {
+      height: 100%;
+      margin-top: 62px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .side-bar {
+      height: 100%;
+      margin-top: 66.1333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .side-bar {
+      height: 100%;
+      margin-top: 82.6666666667px;
+      margin-bottom: 0; } }
+  .side-bar li {
+    height: 80px;
+    border-left: 4px solid rgba(12, 18, 31, 0.1);
+    cursor: pointer;
+    overflow: hidden; }
+    .side-bar li .icon {
+      float: left;
+      width: 26px;
+      height: 26px;
+      margin: 27px 19px; }
+    .side-bar li .icon0 {
+      background-image: url("../images/icon0-g.png"); }
+    .side-bar li .icon1 {
+      background-image: url("../images/icon1-g.png"); }
+    .side-bar li .icon2 {
+      background-image: url("../images/icon2-g.png"); }
+    .side-bar li .icon3 {
+      background-image: url("../images/icon3-g.png"); }
+    .side-bar li .icon4 {
+      background-image: url("../images/icon4-g.png"); }
+    .side-bar li .icon5 {
+      background-image: url("../images/icon5-g.png"); }
+    .side-bar li.current {
+      border-left: 4px solid #41b0ff;
+      background-color: rgba(65, 176, 255, 0.1); }
+      .side-bar li.current .icon0 {
+        background-image: url("../images/icon0-b.png"); }
+      .side-bar li.current .icon1 {
+        background-image: url("../images/icon1-b.png"); }
+      .side-bar li.current .icon2 {
+        background-image: url("../images/icon2-b.png"); }
+      .side-bar li.current .icon3 {
+        background-image: url("../images/icon3-b.png"); }
+      .side-bar li.current .icon4 {
+        background-image: url("../images/icon4-b.png"); }
+      .side-bar li.current .icon5 {
+        background-image: url("../images/icon5-b.png"); }
+
+.content-title {
+  border-bottom: 1px solid #eee;
+  border-color: #2f4979;
+  font-size: 18px;
+  text-indent: 1.4em; }
+  @media screen and (min-width: 1160px) {
+    .content-title {
+      height: 38.4px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .content-title {
+      height: 38.4px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .content-title {
+      height: 52.5px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .content-title {
+      height: 45px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .content-title {
+      height: 45px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .content-title {
+      height: 52.5px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .content-title {
+      height: 54px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .content-title {
+      height: 57.6px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .content-title {
+      height: 72px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1360px) {
+    .content-title {
+      line-height: 38.4px; } }
+  @media screen and (min-width: 1366px) {
+    .content-title {
+      line-height: 38.4px; } }
+  @media screen and (min-width: 1400px) {
+    .content-title {
+      line-height: 52.5px; } }
+  @media screen and (min-width: 1440px) {
+    .content-title {
+      line-height: 45px; } }
+  @media screen and (min-width: 1600px) {
+    .content-title {
+      line-height: 45px; } }
+  @media screen and (min-width: 1680px) {
+    .content-title {
+      line-height: 52.5px; } }
+  @media screen and (min-width: 1920px) {
+    .content-title {
+      line-height: 54px; } }
+  @media screen and (min-width: 2048px) {
+    .content-title {
+      line-height: 57.6px; } }
+  @media screen and (min-width: 2560px) {
+    .content-title {
+      line-height: 72px; } }
+
+.passager-flow {
+  width: 400px;
+  /*height: $height;
+  margin-top: 20px;*/
+  -moz-box-shadow: 0px 0px 10px 2px #2f4979 inset;
+  box-shadow: 0px 0px 10px 2px #2f4979 inset;
+  position: relative;
+  border: 1px solid #2f4979; }
+  @media screen and (min-width: 1160px) {
+    .passager-flow {
+      height: 147.9111111111px;
+      margin-top: 14.2222222222px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .passager-flow {
+      height: 147.9111111111px;
+      margin-top: 14.2222222222px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .passager-flow {
+      height: 202.2222222222px;
+      margin-top: 19.4444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .passager-flow {
+      height: 173.3333333333px;
+      margin-top: 16.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .passager-flow {
+      height: 173.3333333333px;
+      margin-top: 16.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .passager-flow {
+      height: 202.2222222222px;
+      margin-top: 19.4444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .passager-flow {
+      height: 208px;
+      margin-top: 20px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .passager-flow {
+      height: 221.8666666667px;
+      margin-top: 21.3333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .passager-flow {
+      height: 277.3333333333px;
+      margin-top: 26.6666666667px;
+      margin-bottom: 0; } }
+  .passager-flow > span {
+    width: 14px;
+    height: 14px;
+    position: absolute; }
+    .passager-flow > span.left-top {
+      left: 0;
+      top: 0;
+      border-left: 3px solid #42a9f2;
+      border-top: 3px solid #42a9f2; }
+    .passager-flow > span.right-top {
+      right: 0;
+      top: 0;
+      border-top: 3px solid #42a9f2;
+      border-right: 3px solid #42a9f2; }
+    .passager-flow > span.right-bottom {
+      right: 0;
+      bottom: 0;
+      border-right: 3px solid #42a9f2;
+      border-bottom: 3px solid #42a9f2; }
+    .passager-flow > span.left-bottom {
+      left: 0;
+      bottom: 0;
+      border-left: 3px solid #42a9f2;
+      border-bottom: 3px solid #42a9f2; }
+  @media screen and (min-width: 1160px) {
+    .passager-flow .data-panel {
+      height: auto;
+      margin-top: 31.2888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .passager-flow .data-panel {
+      height: auto;
+      margin-top: 31.2888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .passager-flow .data-panel {
+      height: auto;
+      margin-top: 42.7777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .passager-flow .data-panel {
+      height: auto;
+      margin-top: 36.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .passager-flow .data-panel {
+      height: auto;
+      margin-top: 36.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .passager-flow .data-panel {
+      height: auto;
+      margin-top: 42.7777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .passager-flow .data-panel {
+      height: auto;
+      margin-top: 44px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .passager-flow .data-panel {
+      height: auto;
+      margin-top: 46.9333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .passager-flow .data-panel {
+      height: auto;
+      margin-top: 58.6666666667px;
+      margin-bottom: 0; } }
+  .passager-flow .data-panel li {
+    width: 132px;
+    float: left;
+    border-right: 1px solid #2f4979; }
+    @media screen and (min-width: 1160px) {
+      .passager-flow .data-panel li {
+        height: 46.2222222222px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1366px) {
+      .passager-flow .data-panel li {
+        height: 46.2222222222px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1400px) {
+      .passager-flow .data-panel li {
+        height: 63.1944444444px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1440px) {
+      .passager-flow .data-panel li {
+        height: 54.1666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1600px) {
+      .passager-flow .data-panel li {
+        height: 54.1666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1680px) {
+      .passager-flow .data-panel li {
+        height: 63.1944444444px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1920px) {
+      .passager-flow .data-panel li {
+        height: 65px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2048px) {
+      .passager-flow .data-panel li {
+        height: 69.3333333333px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2560px) {
+      .passager-flow .data-panel li {
+        height: 86.6666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    .passager-flow .data-panel li:last-child {
+      border-right: none; }
+    .passager-flow .data-panel li span {
+      display: block;
+      text-align: center; }
+      .passager-flow .data-panel li span:first-child {
+        font-size: 16px;
+        color: #bbbec3; }
+        @media screen and (min-width: 1360px) {
+          .passager-flow .data-panel li span:first-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1366px) {
+          .passager-flow .data-panel li span:first-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1400px) {
+          .passager-flow .data-panel li span:first-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1440px) {
+          .passager-flow .data-panel li span:first-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1600px) {
+          .passager-flow .data-panel li span:first-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1680px) {
+          .passager-flow .data-panel li span:first-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1920px) {
+          .passager-flow .data-panel li span:first-child {
+            line-height: 28px; } }
+        @media screen and (min-width: 2048px) {
+          .passager-flow .data-panel li span:first-child {
+            line-height: 29.8666666667px; } }
+        @media screen and (min-width: 2560px) {
+          .passager-flow .data-panel li span:first-child {
+            line-height: 37.3333333333px; } }
+        @media screen and (min-width: 1160px) {
+          .passager-flow .data-panel li span:first-child {
+            height: auto;
+            margin-top: -6.4px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .passager-flow .data-panel li span:first-child {
+            height: auto;
+            margin-top: -6.4px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .passager-flow .data-panel li span:first-child {
+            height: auto;
+            margin-top: -8.75px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .passager-flow .data-panel li span:first-child {
+            height: auto;
+            margin-top: -7.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .passager-flow .data-panel li span:first-child {
+            height: auto;
+            margin-top: -7.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .passager-flow .data-panel li span:first-child {
+            height: auto;
+            margin-top: -8.75px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .passager-flow .data-panel li span:first-child {
+            height: auto;
+            margin-top: -9px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .passager-flow .data-panel li span:first-child {
+            height: auto;
+            margin-top: -9.6px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .passager-flow .data-panel li span:first-child {
+            height: auto;
+            margin-top: -12px;
+            margin-bottom: 0; } }
+      .passager-flow .data-panel li span:last-child {
+        font-size: 36px;
+        color: #41b0ff; }
+        @media screen and (min-width: 1360px) {
+          .passager-flow .data-panel li span:last-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1366px) {
+          .passager-flow .data-panel li span:last-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1400px) {
+          .passager-flow .data-panel li span:last-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1440px) {
+          .passager-flow .data-panel li span:last-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1600px) {
+          .passager-flow .data-panel li span:last-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1680px) {
+          .passager-flow .data-panel li span:last-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1920px) {
+          .passager-flow .data-panel li span:last-child {
+            line-height: 28px; } }
+        @media screen and (min-width: 2048px) {
+          .passager-flow .data-panel li span:last-child {
+            line-height: 29.8666666667px; } }
+        @media screen and (min-width: 2560px) {
+          .passager-flow .data-panel li span:last-child {
+            line-height: 37.3333333333px; } }
+        @media screen and (min-width: 1160px) {
+          .passager-flow .data-panel li span:last-child {
+            height: auto;
+            margin-top: 19.2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .passager-flow .data-panel li span:last-child {
+            height: auto;
+            margin-top: 19.2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .passager-flow .data-panel li span:last-child {
+            height: auto;
+            margin-top: 26.25px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .passager-flow .data-panel li span:last-child {
+            height: auto;
+            margin-top: 22.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .passager-flow .data-panel li span:last-child {
+            height: auto;
+            margin-top: 22.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .passager-flow .data-panel li span:last-child {
+            height: auto;
+            margin-top: 26.25px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .passager-flow .data-panel li span:last-child {
+            height: auto;
+            margin-top: 27px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .passager-flow .data-panel li span:last-child {
+            height: auto;
+            margin-top: 28.8px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .passager-flow .data-panel li span:last-child {
+            height: auto;
+            margin-top: 36px;
+            margin-bottom: 0; } }
+
+.gender-radio, .average-age {
+  width: 400px;
+  /*height: $height;
+  margin-top: 20px;*/
+  -moz-box-shadow: 0px 0px 10px 2px #2f4979 inset;
+  box-shadow: 0px 0px 10px 2px #2f4979 inset;
+  position: relative;
+  border: 1px solid #2f4979; }
+  @media screen and (min-width: 1160px) {
+    .gender-radio, .average-age {
+      height: 147.9111111111px;
+      margin-top: 14.2222222222px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .gender-radio, .average-age {
+      height: 147.9111111111px;
+      margin-top: 14.2222222222px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .gender-radio, .average-age {
+      height: 202.2222222222px;
+      margin-top: 19.4444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .gender-radio, .average-age {
+      height: 173.3333333333px;
+      margin-top: 16.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .gender-radio, .average-age {
+      height: 173.3333333333px;
+      margin-top: 16.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .gender-radio, .average-age {
+      height: 202.2222222222px;
+      margin-top: 19.4444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .gender-radio, .average-age {
+      height: 208px;
+      margin-top: 20px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .gender-radio, .average-age {
+      height: 221.8666666667px;
+      margin-top: 21.3333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .gender-radio, .average-age {
+      height: 277.3333333333px;
+      margin-top: 26.6666666667px;
+      margin-bottom: 0; } }
+  .gender-radio > span, .average-age > span {
+    width: 14px;
+    height: 14px;
+    position: absolute; }
+    .gender-radio > span.left-top, .average-age > span.left-top {
+      left: 0;
+      top: 0;
+      border-left: 3px solid #42a9f2;
+      border-top: 3px solid #42a9f2; }
+    .gender-radio > span.right-top, .average-age > span.right-top {
+      right: 0;
+      top: 0;
+      border-top: 3px solid #42a9f2;
+      border-right: 3px solid #42a9f2; }
+    .gender-radio > span.right-bottom, .average-age > span.right-bottom {
+      right: 0;
+      bottom: 0;
+      border-right: 3px solid #42a9f2;
+      border-bottom: 3px solid #42a9f2; }
+    .gender-radio > span.left-bottom, .average-age > span.left-bottom {
+      left: 0;
+      bottom: 0;
+      border-left: 3px solid #42a9f2;
+      border-bottom: 3px solid #42a9f2; }
+  @media screen and (min-width: 1160px) {
+    .gender-radio .data-panel, .average-age .data-panel {
+      height: auto;
+      margin-top: 31.2888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .gender-radio .data-panel, .average-age .data-panel {
+      height: auto;
+      margin-top: 31.2888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .gender-radio .data-panel, .average-age .data-panel {
+      height: auto;
+      margin-top: 42.7777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .gender-radio .data-panel, .average-age .data-panel {
+      height: auto;
+      margin-top: 36.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .gender-radio .data-panel, .average-age .data-panel {
+      height: auto;
+      margin-top: 36.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .gender-radio .data-panel, .average-age .data-panel {
+      height: auto;
+      margin-top: 42.7777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .gender-radio .data-panel, .average-age .data-panel {
+      height: auto;
+      margin-top: 44px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .gender-radio .data-panel, .average-age .data-panel {
+      height: auto;
+      margin-top: 46.9333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .gender-radio .data-panel, .average-age .data-panel {
+      height: auto;
+      margin-top: 58.6666666667px;
+      margin-bottom: 0; } }
+  .gender-radio .data-panel li, .average-age .data-panel li {
+    width: 198px;
+    float: left;
+    border-right: 1px solid #2f4979; }
+    @media screen and (min-width: 1160px) {
+      .gender-radio .data-panel li, .average-age .data-panel li {
+        height: 46.2222222222px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1366px) {
+      .gender-radio .data-panel li, .average-age .data-panel li {
+        height: 46.2222222222px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1400px) {
+      .gender-radio .data-panel li, .average-age .data-panel li {
+        height: 63.1944444444px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1440px) {
+      .gender-radio .data-panel li, .average-age .data-panel li {
+        height: 54.1666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1600px) {
+      .gender-radio .data-panel li, .average-age .data-panel li {
+        height: 54.1666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1680px) {
+      .gender-radio .data-panel li, .average-age .data-panel li {
+        height: 63.1944444444px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1920px) {
+      .gender-radio .data-panel li, .average-age .data-panel li {
+        height: 65px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2048px) {
+      .gender-radio .data-panel li, .average-age .data-panel li {
+        height: 69.3333333333px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2560px) {
+      .gender-radio .data-panel li, .average-age .data-panel li {
+        height: 86.6666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    .gender-radio .data-panel li:last-child, .average-age .data-panel li:last-child {
+      border-right: none; }
+    .gender-radio .data-panel li span, .average-age .data-panel li span {
+      display: block;
+      text-align: center; }
+      .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+        font-size: 16px;
+        color: #bbbec3; }
+        @media screen and (min-width: 1360px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1366px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1400px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1440px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1600px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1680px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1920px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            line-height: 28px; } }
+        @media screen and (min-width: 2048px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            line-height: 29.8666666667px; } }
+        @media screen and (min-width: 2560px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            line-height: 37.3333333333px; } }
+        @media screen and (min-width: 1160px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            height: auto;
+            margin-top: -6.4px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            height: auto;
+            margin-top: -6.4px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            height: auto;
+            margin-top: -8.75px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            height: auto;
+            margin-top: -7.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            height: auto;
+            margin-top: -7.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            height: auto;
+            margin-top: -8.75px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            height: auto;
+            margin-top: -9px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            height: auto;
+            margin-top: -9.6px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .gender-radio .data-panel li span:first-child, .average-age .data-panel li span:first-child {
+            height: auto;
+            margin-top: -12px;
+            margin-bottom: 0; } }
+      .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+        font-size: 36px;
+        color: #41b0ff; }
+        @media screen and (min-width: 1360px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1366px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1400px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1440px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1600px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1680px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1920px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            line-height: 28px; } }
+        @media screen and (min-width: 2048px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            line-height: 29.8666666667px; } }
+        @media screen and (min-width: 2560px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            line-height: 37.3333333333px; } }
+        @media screen and (min-width: 1160px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            height: auto;
+            margin-top: 19.2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            height: auto;
+            margin-top: 19.2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            height: auto;
+            margin-top: 26.25px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            height: auto;
+            margin-top: 22.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            height: auto;
+            margin-top: 22.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            height: auto;
+            margin-top: 26.25px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            height: auto;
+            margin-top: 27px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            height: auto;
+            margin-top: 28.8px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .gender-radio .data-panel li span:last-child, .average-age .data-panel li span:last-child {
+            height: auto;
+            margin-top: 36px;
+            margin-bottom: 0; } }
+
+.flow-time, .collect-power, .ping {
+  width: 400px;
+  /*height: $height;
+  margin-top: 20px;*/
+  -moz-box-shadow: 0px 0px 10px 2px #2f4979 inset;
+  box-shadow: 0px 0px 10px 2px #2f4979 inset;
+  position: relative;
+  border: 1px solid #2f4979; }
+  @media screen and (min-width: 1160px) {
+    .flow-time, .collect-power, .ping {
+      height: 162.1333333333px;
+      margin-top: 14.2222222222px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .flow-time, .collect-power, .ping {
+      height: 162.1333333333px;
+      margin-top: 14.2222222222px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .flow-time, .collect-power, .ping {
+      height: 221.6666666667px;
+      margin-top: 19.4444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .flow-time, .collect-power, .ping {
+      height: 190px;
+      margin-top: 16.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .flow-time, .collect-power, .ping {
+      height: 190px;
+      margin-top: 16.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .flow-time, .collect-power, .ping {
+      height: 221.6666666667px;
+      margin-top: 19.4444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .flow-time, .collect-power, .ping {
+      height: 228px;
+      margin-top: 20px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .flow-time, .collect-power, .ping {
+      height: 243.2px;
+      margin-top: 21.3333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .flow-time, .collect-power, .ping {
+      height: 304px;
+      margin-top: 26.6666666667px;
+      margin-bottom: 0; } }
+  .flow-time > span, .collect-power > span, .ping > span {
+    width: 14px;
+    height: 14px;
+    position: absolute; }
+    .flow-time > span.left-top, .collect-power > span.left-top, .ping > span.left-top {
+      left: 0;
+      top: 0;
+      border-left: 3px solid #42a9f2;
+      border-top: 3px solid #42a9f2; }
+    .flow-time > span.right-top, .collect-power > span.right-top, .ping > span.right-top {
+      right: 0;
+      top: 0;
+      border-top: 3px solid #42a9f2;
+      border-right: 3px solid #42a9f2; }
+    .flow-time > span.right-bottom, .collect-power > span.right-bottom, .ping > span.right-bottom {
+      right: 0;
+      bottom: 0;
+      border-right: 3px solid #42a9f2;
+      border-bottom: 3px solid #42a9f2; }
+    .flow-time > span.left-bottom, .collect-power > span.left-bottom, .ping > span.left-bottom {
+      left: 0;
+      bottom: 0;
+      border-left: 3px solid #42a9f2;
+      border-bottom: 3px solid #42a9f2; }
+  @media screen and (min-width: 1160px) {
+    .flow-time .data-panel, .collect-power .data-panel, .ping .data-panel {
+      height: auto;
+      margin-top: 31.2888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .flow-time .data-panel, .collect-power .data-panel, .ping .data-panel {
+      height: auto;
+      margin-top: 31.2888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .flow-time .data-panel, .collect-power .data-panel, .ping .data-panel {
+      height: auto;
+      margin-top: 42.7777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .flow-time .data-panel, .collect-power .data-panel, .ping .data-panel {
+      height: auto;
+      margin-top: 36.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .flow-time .data-panel, .collect-power .data-panel, .ping .data-panel {
+      height: auto;
+      margin-top: 36.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .flow-time .data-panel, .collect-power .data-panel, .ping .data-panel {
+      height: auto;
+      margin-top: 42.7777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .flow-time .data-panel, .collect-power .data-panel, .ping .data-panel {
+      height: auto;
+      margin-top: 44px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .flow-time .data-panel, .collect-power .data-panel, .ping .data-panel {
+      height: auto;
+      margin-top: 46.9333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .flow-time .data-panel, .collect-power .data-panel, .ping .data-panel {
+      height: auto;
+      margin-top: 58.6666666667px;
+      margin-bottom: 0; } }
+  .flow-time .data-panel li, .collect-power .data-panel li, .ping .data-panel li {
+    width: 198px;
+    float: left;
+    border-right: 1px solid #2f4979; }
+    @media screen and (min-width: 1160px) {
+      .flow-time .data-panel li, .collect-power .data-panel li, .ping .data-panel li {
+        height: 46.2222222222px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1366px) {
+      .flow-time .data-panel li, .collect-power .data-panel li, .ping .data-panel li {
+        height: 46.2222222222px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1400px) {
+      .flow-time .data-panel li, .collect-power .data-panel li, .ping .data-panel li {
+        height: 63.1944444444px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1440px) {
+      .flow-time .data-panel li, .collect-power .data-panel li, .ping .data-panel li {
+        height: 54.1666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1600px) {
+      .flow-time .data-panel li, .collect-power .data-panel li, .ping .data-panel li {
+        height: 54.1666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1680px) {
+      .flow-time .data-panel li, .collect-power .data-panel li, .ping .data-panel li {
+        height: 63.1944444444px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1920px) {
+      .flow-time .data-panel li, .collect-power .data-panel li, .ping .data-panel li {
+        height: 65px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2048px) {
+      .flow-time .data-panel li, .collect-power .data-panel li, .ping .data-panel li {
+        height: 69.3333333333px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2560px) {
+      .flow-time .data-panel li, .collect-power .data-panel li, .ping .data-panel li {
+        height: 86.6666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    .flow-time .data-panel li:last-child, .collect-power .data-panel li:last-child, .ping .data-panel li:last-child {
+      border-right: none; }
+    .flow-time .data-panel li span, .collect-power .data-panel li span, .ping .data-panel li span {
+      display: block;
+      text-align: center; }
+      .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+        font-size: 16px;
+        color: #bbbec3; }
+        @media screen and (min-width: 1360px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1366px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1400px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1440px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1600px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1680px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1920px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            line-height: 28px; } }
+        @media screen and (min-width: 2048px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            line-height: 29.8666666667px; } }
+        @media screen and (min-width: 2560px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            line-height: 37.3333333333px; } }
+        @media screen and (min-width: 1160px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            height: auto;
+            margin-top: -6.4px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            height: auto;
+            margin-top: -6.4px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            height: auto;
+            margin-top: -8.75px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            height: auto;
+            margin-top: -7.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            height: auto;
+            margin-top: -7.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            height: auto;
+            margin-top: -8.75px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            height: auto;
+            margin-top: -9px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            height: auto;
+            margin-top: -9.6px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .flow-time .data-panel li span:first-child, .collect-power .data-panel li span:first-child, .ping .data-panel li span:first-child {
+            height: auto;
+            margin-top: -12px;
+            margin-bottom: 0; } }
+      .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+        font-size: 36px;
+        color: #41b0ff; }
+        @media screen and (min-width: 1360px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1366px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1400px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1440px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1600px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1680px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1920px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            line-height: 28px; } }
+        @media screen and (min-width: 2048px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            line-height: 29.8666666667px; } }
+        @media screen and (min-width: 2560px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            line-height: 37.3333333333px; } }
+        @media screen and (min-width: 1160px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            height: auto;
+            margin-top: 19.2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            height: auto;
+            margin-top: 19.2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            height: auto;
+            margin-top: 26.25px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            height: auto;
+            margin-top: 22.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            height: auto;
+            margin-top: 22.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            height: auto;
+            margin-top: 26.25px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            height: auto;
+            margin-top: 27px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            height: auto;
+            margin-top: 28.8px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .flow-time .data-panel li span:last-child, .collect-power .data-panel li span:last-child, .ping .data-panel li span:last-child {
+            height: auto;
+            margin-top: 36px;
+            margin-bottom: 0; } }
+
+.sales {
+  width: 400px;
+  /*height: $height;
+  margin-top: 20px;*/
+  -moz-box-shadow: 0px 0px 10px 2px #2f4979 inset;
+  box-shadow: 0px 0px 10px 2px #2f4979 inset;
+  position: relative;
+  border: 1px solid #2f4979; }
+  @media screen and (min-width: 1160px) {
+    .sales {
+      height: 160.7111111111px;
+      margin-top: 14.2222222222px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .sales {
+      height: 160.7111111111px;
+      margin-top: 14.2222222222px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .sales {
+      height: 219.7222222222px;
+      margin-top: 19.4444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .sales {
+      height: 188.3333333333px;
+      margin-top: 16.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .sales {
+      height: 188.3333333333px;
+      margin-top: 16.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .sales {
+      height: 219.7222222222px;
+      margin-top: 19.4444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .sales {
+      height: 226px;
+      margin-top: 20px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .sales {
+      height: 241.0666666667px;
+      margin-top: 21.3333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .sales {
+      height: 301.3333333333px;
+      margin-top: 26.6666666667px;
+      margin-bottom: 0; } }
+  .sales > span {
+    width: 14px;
+    height: 14px;
+    position: absolute; }
+    .sales > span.left-top {
+      left: 0;
+      top: 0;
+      border-left: 3px solid #42a9f2;
+      border-top: 3px solid #42a9f2; }
+    .sales > span.right-top {
+      right: 0;
+      top: 0;
+      border-top: 3px solid #42a9f2;
+      border-right: 3px solid #42a9f2; }
+    .sales > span.right-bottom {
+      right: 0;
+      bottom: 0;
+      border-right: 3px solid #42a9f2;
+      border-bottom: 3px solid #42a9f2; }
+    .sales > span.left-bottom {
+      left: 0;
+      bottom: 0;
+      border-left: 3px solid #42a9f2;
+      border-bottom: 3px solid #42a9f2; }
+  @media screen and (min-width: 1160px) {
+    .sales .data-panel {
+      height: auto;
+      margin-top: 31.2888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .sales .data-panel {
+      height: auto;
+      margin-top: 31.2888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .sales .data-panel {
+      height: auto;
+      margin-top: 42.7777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .sales .data-panel {
+      height: auto;
+      margin-top: 36.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .sales .data-panel {
+      height: auto;
+      margin-top: 36.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .sales .data-panel {
+      height: auto;
+      margin-top: 42.7777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .sales .data-panel {
+      height: auto;
+      margin-top: 44px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .sales .data-panel {
+      height: auto;
+      margin-top: 46.9333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .sales .data-panel {
+      height: auto;
+      margin-top: 58.6666666667px;
+      margin-bottom: 0; } }
+  .sales .data-panel li {
+    width: 198px;
+    float: left;
+    border-right: 1px solid #2f4979; }
+    @media screen and (min-width: 1160px) {
+      .sales .data-panel li {
+        height: 46.2222222222px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1366px) {
+      .sales .data-panel li {
+        height: 46.2222222222px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1400px) {
+      .sales .data-panel li {
+        height: 63.1944444444px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1440px) {
+      .sales .data-panel li {
+        height: 54.1666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1600px) {
+      .sales .data-panel li {
+        height: 54.1666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1680px) {
+      .sales .data-panel li {
+        height: 63.1944444444px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1920px) {
+      .sales .data-panel li {
+        height: 65px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2048px) {
+      .sales .data-panel li {
+        height: 69.3333333333px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2560px) {
+      .sales .data-panel li {
+        height: 86.6666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    .sales .data-panel li:last-child {
+      border-right: none; }
+    .sales .data-panel li span {
+      display: block;
+      text-align: center; }
+      .sales .data-panel li span:first-child {
+        font-size: 16px;
+        color: #bbbec3; }
+        @media screen and (min-width: 1360px) {
+          .sales .data-panel li span:first-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1366px) {
+          .sales .data-panel li span:first-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1400px) {
+          .sales .data-panel li span:first-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1440px) {
+          .sales .data-panel li span:first-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1600px) {
+          .sales .data-panel li span:first-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1680px) {
+          .sales .data-panel li span:first-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1920px) {
+          .sales .data-panel li span:first-child {
+            line-height: 28px; } }
+        @media screen and (min-width: 2048px) {
+          .sales .data-panel li span:first-child {
+            line-height: 29.8666666667px; } }
+        @media screen and (min-width: 2560px) {
+          .sales .data-panel li span:first-child {
+            line-height: 37.3333333333px; } }
+        @media screen and (min-width: 1160px) {
+          .sales .data-panel li span:first-child {
+            height: auto;
+            margin-top: -6.4px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .sales .data-panel li span:first-child {
+            height: auto;
+            margin-top: -6.4px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .sales .data-panel li span:first-child {
+            height: auto;
+            margin-top: -8.75px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .sales .data-panel li span:first-child {
+            height: auto;
+            margin-top: -7.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .sales .data-panel li span:first-child {
+            height: auto;
+            margin-top: -7.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .sales .data-panel li span:first-child {
+            height: auto;
+            margin-top: -8.75px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .sales .data-panel li span:first-child {
+            height: auto;
+            margin-top: -9px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .sales .data-panel li span:first-child {
+            height: auto;
+            margin-top: -9.6px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .sales .data-panel li span:first-child {
+            height: auto;
+            margin-top: -12px;
+            margin-bottom: 0; } }
+      .sales .data-panel li span:last-child {
+        font-size: 36px;
+        color: #41b0ff; }
+        @media screen and (min-width: 1360px) {
+          .sales .data-panel li span:last-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1366px) {
+          .sales .data-panel li span:last-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1400px) {
+          .sales .data-panel li span:last-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1440px) {
+          .sales .data-panel li span:last-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1600px) {
+          .sales .data-panel li span:last-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1680px) {
+          .sales .data-panel li span:last-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1920px) {
+          .sales .data-panel li span:last-child {
+            line-height: 28px; } }
+        @media screen and (min-width: 2048px) {
+          .sales .data-panel li span:last-child {
+            line-height: 29.8666666667px; } }
+        @media screen and (min-width: 2560px) {
+          .sales .data-panel li span:last-child {
+            line-height: 37.3333333333px; } }
+        @media screen and (min-width: 1160px) {
+          .sales .data-panel li span:last-child {
+            height: auto;
+            margin-top: 19.2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .sales .data-panel li span:last-child {
+            height: auto;
+            margin-top: 19.2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .sales .data-panel li span:last-child {
+            height: auto;
+            margin-top: 26.25px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .sales .data-panel li span:last-child {
+            height: auto;
+            margin-top: 22.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .sales .data-panel li span:last-child {
+            height: auto;
+            margin-top: 22.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .sales .data-panel li span:last-child {
+            height: auto;
+            margin-top: 26.25px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .sales .data-panel li span:last-child {
+            height: auto;
+            margin-top: 27px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .sales .data-panel li span:last-child {
+            height: auto;
+            margin-top: 28.8px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .sales .data-panel li span:last-child {
+            height: auto;
+            margin-top: 36px;
+            margin-bottom: 0; } }
+
+.age-gender-radio {
+  width: 400px;
+  /*height: $height;
+  margin-top: 20px;*/
+  -moz-box-shadow: 0px 0px 10px 2px #2f4979 inset;
+  box-shadow: 0px 0px 10px 2px #2f4979 inset;
+  position: relative;
+  border: 1px solid #2f4979; }
+  @media screen and (min-width: 1160px) {
+    .age-gender-radio {
+      height: 203.3777777778px;
+      margin-top: 14.2222222222px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .age-gender-radio {
+      height: 203.3777777778px;
+      margin-top: 14.2222222222px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .age-gender-radio {
+      height: 278.0555555556px;
+      margin-top: 19.4444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .age-gender-radio {
+      height: 238.3333333333px;
+      margin-top: 16.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .age-gender-radio {
+      height: 238.3333333333px;
+      margin-top: 16.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .age-gender-radio {
+      height: 278.0555555556px;
+      margin-top: 19.4444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .age-gender-radio {
+      height: 286px;
+      margin-top: 20px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .age-gender-radio {
+      height: 305.0666666667px;
+      margin-top: 21.3333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .age-gender-radio {
+      height: 381.3333333333px;
+      margin-top: 26.6666666667px;
+      margin-bottom: 0; } }
+  .age-gender-radio > span {
+    width: 14px;
+    height: 14px;
+    position: absolute; }
+    .age-gender-radio > span.left-top {
+      left: 0;
+      top: 0;
+      border-left: 3px solid #42a9f2;
+      border-top: 3px solid #42a9f2; }
+    .age-gender-radio > span.right-top {
+      right: 0;
+      top: 0;
+      border-top: 3px solid #42a9f2;
+      border-right: 3px solid #42a9f2; }
+    .age-gender-radio > span.right-bottom {
+      right: 0;
+      bottom: 0;
+      border-right: 3px solid #42a9f2;
+      border-bottom: 3px solid #42a9f2; }
+    .age-gender-radio > span.left-bottom {
+      left: 0;
+      bottom: 0;
+      border-left: 3px solid #42a9f2;
+      border-bottom: 3px solid #42a9f2; }
+  @media screen and (min-width: 1160px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 31.2888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 31.2888888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 42.7777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 36.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 36.6666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 42.7777777778px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 44px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 46.9333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 58.6666666667px;
+      margin-bottom: 0; } }
+  .age-gender-radio .data-panel li {
+    width: 198px;
+    float: left;
+    border-right: 1px solid #2f4979; }
+    @media screen and (min-width: 1160px) {
+      .age-gender-radio .data-panel li {
+        height: 46.2222222222px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1366px) {
+      .age-gender-radio .data-panel li {
+        height: 46.2222222222px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1400px) {
+      .age-gender-radio .data-panel li {
+        height: 63.1944444444px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1440px) {
+      .age-gender-radio .data-panel li {
+        height: 54.1666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1600px) {
+      .age-gender-radio .data-panel li {
+        height: 54.1666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1680px) {
+      .age-gender-radio .data-panel li {
+        height: 63.1944444444px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1920px) {
+      .age-gender-radio .data-panel li {
+        height: 65px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2048px) {
+      .age-gender-radio .data-panel li {
+        height: 69.3333333333px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2560px) {
+      .age-gender-radio .data-panel li {
+        height: 86.6666666667px;
+        margin-top: 0;
+        margin-bottom: 0; } }
+    .age-gender-radio .data-panel li:last-child {
+      border-right: none; }
+    .age-gender-radio .data-panel li span {
+      display: block;
+      text-align: center; }
+      .age-gender-radio .data-panel li span:first-child {
+        font-size: 16px;
+        color: #bbbec3; }
+        @media screen and (min-width: 1360px) {
+          .age-gender-radio .data-panel li span:first-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1366px) {
+          .age-gender-radio .data-panel li span:first-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1400px) {
+          .age-gender-radio .data-panel li span:first-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1440px) {
+          .age-gender-radio .data-panel li span:first-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1600px) {
+          .age-gender-radio .data-panel li span:first-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1680px) {
+          .age-gender-radio .data-panel li span:first-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1920px) {
+          .age-gender-radio .data-panel li span:first-child {
+            line-height: 28px; } }
+        @media screen and (min-width: 2048px) {
+          .age-gender-radio .data-panel li span:first-child {
+            line-height: 29.8666666667px; } }
+        @media screen and (min-width: 2560px) {
+          .age-gender-radio .data-panel li span:first-child {
+            line-height: 37.3333333333px; } }
+        @media screen and (min-width: 1160px) {
+          .age-gender-radio .data-panel li span:first-child {
+            height: auto;
+            margin-top: -6.4px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .age-gender-radio .data-panel li span:first-child {
+            height: auto;
+            margin-top: -6.4px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .age-gender-radio .data-panel li span:first-child {
+            height: auto;
+            margin-top: -8.75px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .age-gender-radio .data-panel li span:first-child {
+            height: auto;
+            margin-top: -7.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .age-gender-radio .data-panel li span:first-child {
+            height: auto;
+            margin-top: -7.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .age-gender-radio .data-panel li span:first-child {
+            height: auto;
+            margin-top: -8.75px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .age-gender-radio .data-panel li span:first-child {
+            height: auto;
+            margin-top: -9px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .age-gender-radio .data-panel li span:first-child {
+            height: auto;
+            margin-top: -9.6px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .age-gender-radio .data-panel li span:first-child {
+            height: auto;
+            margin-top: -12px;
+            margin-bottom: 0; } }
+      .age-gender-radio .data-panel li span:last-child {
+        font-size: 36px;
+        color: #41b0ff; }
+        @media screen and (min-width: 1360px) {
+          .age-gender-radio .data-panel li span:last-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1366px) {
+          .age-gender-radio .data-panel li span:last-child {
+            line-height: 19.9111111111px; } }
+        @media screen and (min-width: 1400px) {
+          .age-gender-radio .data-panel li span:last-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1440px) {
+          .age-gender-radio .data-panel li span:last-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1600px) {
+          .age-gender-radio .data-panel li span:last-child {
+            line-height: 23.3333333333px; } }
+        @media screen and (min-width: 1680px) {
+          .age-gender-radio .data-panel li span:last-child {
+            line-height: 27.2222222222px; } }
+        @media screen and (min-width: 1920px) {
+          .age-gender-radio .data-panel li span:last-child {
+            line-height: 28px; } }
+        @media screen and (min-width: 2048px) {
+          .age-gender-radio .data-panel li span:last-child {
+            line-height: 29.8666666667px; } }
+        @media screen and (min-width: 2560px) {
+          .age-gender-radio .data-panel li span:last-child {
+            line-height: 37.3333333333px; } }
+        @media screen and (min-width: 1160px) {
+          .age-gender-radio .data-panel li span:last-child {
+            height: auto;
+            margin-top: 19.2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1366px) {
+          .age-gender-radio .data-panel li span:last-child {
+            height: auto;
+            margin-top: 19.2px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1400px) {
+          .age-gender-radio .data-panel li span:last-child {
+            height: auto;
+            margin-top: 26.25px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1440px) {
+          .age-gender-radio .data-panel li span:last-child {
+            height: auto;
+            margin-top: 22.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1600px) {
+          .age-gender-radio .data-panel li span:last-child {
+            height: auto;
+            margin-top: 22.5px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1680px) {
+          .age-gender-radio .data-panel li span:last-child {
+            height: auto;
+            margin-top: 26.25px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 1920px) {
+          .age-gender-radio .data-panel li span:last-child {
+            height: auto;
+            margin-top: 27px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2048px) {
+          .age-gender-radio .data-panel li span:last-child {
+            height: auto;
+            margin-top: 28.8px;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 2560px) {
+          .age-gender-radio .data-panel li span:last-child {
+            height: auto;
+            margin-top: 36px;
+            margin-bottom: 0; } }
+  @media screen and (min-width: 1160px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 57.6px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 57.6px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 78.75px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 67.5px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 67.5px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 78.75px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 81px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 86.4px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .age-gender-radio .data-panel {
+      height: auto;
+      margin-top: 108px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1160px) {
+    .age-gender-radio .data-panel li span {
+      height: auto;
+      margin-top: 9.2444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .age-gender-radio .data-panel li span {
+      height: auto;
+      margin-top: 9.2444444444px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .age-gender-radio .data-panel li span {
+      height: auto;
+      margin-top: 12.6388888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .age-gender-radio .data-panel li span {
+      height: auto;
+      margin-top: 10.8333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .age-gender-radio .data-panel li span {
+      height: auto;
+      margin-top: 10.8333333333px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .age-gender-radio .data-panel li span {
+      height: auto;
+      margin-top: 12.6388888889px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .age-gender-radio .data-panel li span {
+      height: auto;
+      margin-top: 13px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .age-gender-radio .data-panel li span {
+      height: auto;
+      margin-top: 13.8666666667px;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .age-gender-radio .data-panel li span {
+      height: auto;
+      margin-top: 17.3333333333px;
+      margin-bottom: 0; } }
+  .age-gender-radio .data-panel li span:first-child {
+    /*margin-top: -54px;
+    margin-bottom: 18px;*/ }
+    @media screen and (min-width: 1160px) {
+      .age-gender-radio .data-panel li span:first-child {
+        height: auto;
+        margin-top: -38.4px;
+        margin-bottom: 12.8px; } }
+    @media screen and (min-width: 1366px) {
+      .age-gender-radio .data-panel li span:first-child {
+        height: auto;
+        margin-top: -38.4px;
+        margin-bottom: 12.8px; } }
+    @media screen and (min-width: 1400px) {
+      .age-gender-radio .data-panel li span:first-child {
+        height: auto;
+        margin-top: -52.5px;
+        margin-bottom: 17.5px; } }
+    @media screen and (min-width: 1440px) {
+      .age-gender-radio .data-panel li span:first-child {
+        height: auto;
+        margin-top: -45px;
+        margin-bottom: 15px; } }
+    @media screen and (min-width: 1600px) {
+      .age-gender-radio .data-panel li span:first-child {
+        height: auto;
+        margin-top: -45px;
+        margin-bottom: 15px; } }
+    @media screen and (min-width: 1680px) {
+      .age-gender-radio .data-panel li span:first-child {
+        height: auto;
+        margin-top: -52.5px;
+        margin-bottom: 17.5px; } }
+    @media screen and (min-width: 1920px) {
+      .age-gender-radio .data-panel li span:first-child {
+        height: auto;
+        margin-top: -54px;
+        margin-bottom: 18px; } }
+    @media screen and (min-width: 2048px) {
+      .age-gender-radio .data-panel li span:first-child {
+        height: auto;
+        margin-top: -57.6px;
+        margin-bottom: 19.2px; } }
+    @media screen and (min-width: 2560px) {
+      .age-gender-radio .data-panel li span:first-child {
+        height: auto;
+        margin-top: -72px;
+        margin-bottom: 24px; } }
+  .age-gender-radio .data-panel li span:last-child {
+    font-size: 16px;
+    color: #fff; }
+    @media screen and (min-width: 1160px) {
+      .age-gender-radio .data-panel li span:last-child {
+        height: auto;
+        margin-top: 7.1111111111px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1366px) {
+      .age-gender-radio .data-panel li span:last-child {
+        height: auto;
+        margin-top: 7.1111111111px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1400px) {
+      .age-gender-radio .data-panel li span:last-child {
+        height: auto;
+        margin-top: 9.7222222222px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1440px) {
+      .age-gender-radio .data-panel li span:last-child {
+        height: auto;
+        margin-top: 8.3333333333px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1600px) {
+      .age-gender-radio .data-panel li span:last-child {
+        height: auto;
+        margin-top: 8.3333333333px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1680px) {
+      .age-gender-radio .data-panel li span:last-child {
+        height: auto;
+        margin-top: 9.7222222222px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 1920px) {
+      .age-gender-radio .data-panel li span:last-child {
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2048px) {
+      .age-gender-radio .data-panel li span:last-child {
+        height: auto;
+        margin-top: 10.6666666667px;
+        margin-bottom: 0; } }
+    @media screen and (min-width: 2560px) {
+      .age-gender-radio .data-panel li span:last-child {
+        height: auto;
+        margin-top: 13.3333333333px;
+        margin-bottom: 0; } }
+
+.map-area {
+  position: relative; }
+  .map-area .btns {
+    width: 100%;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    z-index: 2; }
+  .map-area .back-btn {
+    width: 62px;
+    height: 62px;
+    background-color: #020a1c;
+    border: solid 1px #2f4979;
+    -moz-box-shadow: 0px 0px 10px 1px #41b0ff inset;
+    box-shadow: 0px 0px 10px 1px #41b0ff inset;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    right: 40px;
+    top: 64px;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer; }
+  .map-area .button {
+    width: 120px;
+    height: 44px;
+    background-color: #020a1c;
+    border-radius: 6px;
+    border: solid 1px #2f518e;
+    float: left;
+    margin-left: 40px;
+    -moz-box-shadow: 0px 0px 10px 1px #41b0ff inset;
+    box-shadow: 0px 0px 10px 1px #41b0ff inset; }
+    .map-area .button:last-child {
+      float: right;
+      margin-right: 40px; }
+    .map-area .button li {
+      float: left; }
+      .map-area .button li:first-child {
+        margin-left: 13px;
+        font-size: 16px;
+        line-height: 42px; }
+      .map-area .button li:last-child {
+        float: right;
+        margin-right: 13px;
+        width: 10px;
+        height: 16px;
+        background-image: url("../images/tips.png");
+        margin-top: 14px; }
+        .map-area .button li:last-child span {
+          display: block;
+          width: 20px;
+          height: 21px;
+          cursor: pointer; }
+          .map-area .button li:last-child span:first-child {
+            margin-top: -14px; }
+  @media screen and (min-width: 1160px) {
+    .map-area .map {
+      height: 689.7777777778px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1366px) {
+    .map-area .map {
+      height: 689.7777777778px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1400px) {
+    .map-area .map {
+      height: 943.0555555556px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1440px) {
+    .map-area .map {
+      height: 808.3333333333px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1600px) {
+    .map-area .map {
+      height: 808.3333333333px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1680px) {
+    .map-area .map {
+      height: 943.0555555556px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 1920px) {
+    .map-area .map {
+      height: 970px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2048px) {
+    .map-area .map {
+      height: 1034.6666666667px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 2560px) {
+    .map-area .map {
+      height: 1293.3333333333px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+
+/*# sourceMappingURL=page.css.map */

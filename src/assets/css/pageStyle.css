@@ -1,0 +1,718 @@
+.content {
+  overflow: hidden; }
+  .content .sidebar {
+    width: 400px;
+    height: 982px;
+    background: #020c1b url("../images/left_bg.png") no-repeat center; }
+    .content .sidebar .title {
+      height: 50px;
+      font-size: 18px;
+      line-height: 50px;
+      color: #fff;
+      background: url("../images/left_title_bg.png");
+      padding-left: 20px; }
+    .content .sidebar ul.dataList {
+      width: 135px;
+      float: left; }
+      .content .sidebar ul.dataList li {
+        margin-left: 20px;
+        color: #b2c2d3;
+        line-height: 1;
+        overflow: hidden; }
+        .content .sidebar ul.dataList li:first-child {
+          color: #fff;
+          font-size: 15px;
+          margin-top: 20px; }
+        .content .sidebar ul.dataList li:nth-child(2) span {
+          float: left;
+          margin-top: 14px;
+          color: #fff;
+          font-size: 14px;
+          line-height: 1; }
+          .content .sidebar ul.dataList li:nth-child(2) span:first-child {
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1; }
+          .content .sidebar ul.dataList li:nth-child(2) span:last-child {
+            margin-top: 35px; }
+        .content .sidebar ul.dataList li:nth-child(3), .content .sidebar ul.dataList li:nth-child(5) {
+          margin-top: 20px;
+          font-size: 12px; }
+        .content .sidebar ul.dataList li:nth-child(4), .content .sidebar ul.dataList li:nth-child(6) {
+          margin-top: 10px;
+          font-size: 14px; }
+          .content .sidebar ul.dataList li:nth-child(4) span, .content .sidebar ul.dataList li:nth-child(6) span {
+            color: #4280f2; }
+  .content .passenger, .content .stay, .content .sex {
+    height: 230px;
+    border-bottom: 1px solid #2f4979; }
+  .content .sex {
+    border-bottom: none; }
+    .content .sex ul {
+      width: 135px;
+      float: left; }
+      .content .sex ul li {
+        margin-left: 20px;
+        color: #b2c2d3;
+        line-height: 1;
+        overflow: hidden; }
+        .content .sex ul li:first-child {
+          color: #fff;
+          font-size: 15px;
+          margin-top: 20px; }
+        .content .sex ul li:nth-child(2) span, .content .sex ul li:nth-child(3) span {
+          float: left;
+          margin-top: 14px;
+          font-size: 14px;
+          line-height: 1;
+          color: #42c1f2; }
+          .content .sex ul li:nth-child(2) span:first-child, .content .sex ul li:nth-child(3) span:first-child {
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1; }
+          .content .sex ul li:nth-child(2) span:last-child, .content .sex ul li:nth-child(3) span:last-child {
+            margin-top: 35px; }
+        .content .sex ul li:nth-child(3) span {
+          margin-top: 10px;
+          color: #ec3c60; }
+        .content .sex ul li:nth-child(4) {
+          font-size: 14px;
+          margin-top: 24px;
+          color: #fff; }
+        .content .sex ul li:nth-child(5) {
+          font-size: 12px;
+          color: #b2c2d3;
+          margin-top: 10px; }
+          .content .sex ul li:nth-child(5) img {
+            margin-left: 8px;
+            vertical-align: middle; }
+  .content .averageTime {
+    height: 238px;
+    border-top: 1px solid #2f4979; }
+    .content .averageTime .dataList li:nth-child(4) span {
+      float: left; }
+      .content .averageTime .dataList li:nth-child(4) span:nth-child(2) {
+        margin-left: 6px; }
+    .content .averageTime .dataList li:nth-child(6) span {
+      float: left; }
+      .content .averageTime .dataList li:nth-child(6) span:first-child {
+        color: #fff; }
+      .content .averageTime .dataList li:nth-child(6) span:nth-child(2) {
+        margin-left: 16px; }
+      .content .averageTime .dataList li:nth-child(6) span:last-child {
+        margin-left: 6px; }
+  .content .heatMap {
+    width: 400px;
+    height: 220px;
+    position: relative;
+    border-top: 1px solid #2f4979; }
+    .content .heatMap p {
+      font-size: 15px;
+      line-height: 45px;
+      padding-left: 17px;
+      color: #fff;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .content .heatMap img {
+      width: 360px;
+      height: 220px; }
+  .content #passengerEcharts, .content #stayEcharts, .content #sexEcharts, .content #workHoursEcharts {
+    width: 263px;
+    height: 186px;
+    margin-top: 20px;
+    float: left; }
+  .content .dataOverview {
+    margin: 10px 0 0 10px;
+    float: left; }
+  .content .theme {
+    margin: 10px 10px 0 0;
+    float: right; }
+    .content .theme .title p {
+      float: left; }
+    .content .theme .title .btn {
+      width: 100px;
+      height: 32px;
+      float: right;
+      line-height: 1;
+      background: url("../images/zt_btn.png");
+      margin: 9px 20px;
+      position: relative; }
+      .content .theme .title .btn p {
+        font-size: 12px;
+        line-height: 32px;
+        margin-left: 25px;
+        color: #fff;
+        text-align: center; }
+      .content .theme .title .btn ol {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px; }
+        .content .theme .title .btn ol li {
+          height: 16px; }
+          .content .theme .title .btn ol li:hover {
+            cursor: pointer; }
+    .content .theme .daytimeTrends {
+      height: 286px;
+      border-bottom: 1px solid #2f4979;
+      position: relative; }
+      .content .theme .daytimeTrends #daytime {
+        width: 360px;
+        height: 220px;
+        margin: 0 20px; }
+    .content .theme p.echartsTitle {
+      font-size: 16px;
+      line-height: 50px;
+      margin-left: 20px;
+      color: #fff; }
+    .content .theme .passengerHours {
+      height: 305px;
+      border-bottom: 1px solid #2f4979;
+      position: relative; }
+      .content .theme .passengerHours #passengerHours {
+        width: 360px;
+        height: 220px;
+        margin: 0 20px; }
+    .content .theme .rank .title1 > p {
+      font-size: 16px;
+      line-height: 1;
+      color: #fff;
+      float: left;
+      margin: 28px 0 17px 20px; }
+    .content .theme .rank .title1 .btn {
+      width: 100px;
+      height: 32px;
+      float: right;
+      line-height: 1;
+      margin: 22px 20px 10px 0;
+      position: relative;
+      background: url("../images/zt_btn.png"); }
+      .content .theme .rank .title1 .btn p {
+        font-size: 12px;
+        line-height: 32px;
+        margin-left: 25px;
+        color: #fff; }
+      .content .theme .rank .title1 .btn ol {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px; }
+        .content .theme .rank .title1 .btn ol li {
+          height: 16px; }
+          .content .theme .rank .title1 .btn ol li:hover {
+            cursor: pointer; }
+    .content .theme .rank table {
+      width: 360px;
+      margin: 0 20px;
+      color: #fff;
+      text-align: center; }
+      .content .theme .rank table tr {
+        height: 36px; }
+      .content .theme .rank table thead {
+        background: #111f3d;
+        font-size: 14px; }
+      .content .theme .rank table tbody {
+        font-size: 12px; }
+        .content .theme .rank table tbody tr:nth-child(even) {
+          background: #0b1223; }
+  .content .map {
+    margin: 0 410px;
+    color: #fff; }
+    .content .map .title {
+      width: 100%;
+      height: 67px;
+      margin: 0 auto;
+      background: url("../images/map_title.png") no-repeat center;
+      font-size: 22px;
+      line-height: 67px;
+      text-align: center; }
+    .content .map .time {
+      font-size: 18px;
+      line-height: 60px;
+      text-align: center; }
+    .content .map .tab {
+      height: 681px;
+      position: relative; }
+      .content .map .tab ul {
+        display: table;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10; }
+        .content .map .tab ul > li {
+          height: 44px;
+          float: left;
+          font-size: 16px;
+          line-height: 44px;
+          text-indent: 20px;
+          position: relative; }
+          .content .map .tab ul > li:first-child {
+            width: 108px;
+            background: url("../images/map_btn_s.png"); }
+          .content .map .tab ul > li:nth-child(2) {
+            width: 182px;
+            margin-left: 40px;
+            background: url("../images/map_btn_b.png"); }
+          .content .map .tab ul > li:nth-child(3) {
+            width: 40px;
+            text-align: center;
+            text-indent: 0; }
+          .content .map .tab ul > li:last-child {
+            width: 182px;
+            background: url("../images/map_btn_b.png"); }
+          .content .map .tab ul > li > ol {
+            width: 30px;
+            position: absolute;
+            right: 0;
+            top: 0; }
+            .content .map .tab ul > li > ol li {
+              height: 22px; }
+              .content .map .tab ul > li > ol li:hover {
+                cursor: pointer; }
+      .content .map .tab > ol {
+        position: absolute;
+        right: 2%;
+        top: 0;
+        width: 88px;
+        z-index: 10; }
+        .content .map .tab > ol li {
+          height: 48px;
+          font-size: 16px;
+          line-height: 48px;
+          text-align: center;
+          background: url("../images/map_btn_r_s.png");
+          cursor: pointer; }
+          .content .map .tab > ol li:last-child {
+            background: url("../images/map_btn_r_d.png"); }
+          .content .map .tab > ol li.select {
+            background: url("../images/map_btn_r.png"); }
+      .content .map .tab #map {
+        height: 680px;
+        width: 96%;
+        position: absolute;
+        top: 0;
+        margin-left: 2.1%; }
+        .content .map .tab #map img {
+          max-width: 100%; }
+      .content .map .tab .strech {
+        display: none;
+        position: absolute;
+        left: 2%;
+        bottom: 20px;
+        width: 36px;
+        height: 72px; }
+        .content .map .tab .strech img {
+          width: 36px;
+          height: 36px; }
+    .content .map .jrgl {
+      height: 204px;
+      margin: 0 2%;
+      color: #fff;
+      /*background: url("../images/jrgl.png") no-repeat center;
+      background-size:auto 100%;*/
+      border: 20px solid transparent;
+      border-image: url("../images/jrgl.png") 20 20 20 round; }
+      .content .map .jrgl .subtitle {
+        text-align: center;
+        font-size: 22px;
+        line-height: 50px;
+        margin-top: -20px;
+        background: url("../images/jrgl_t.png") center center no-repeat; }
+      .content .map .jrgl .glList {
+        overflow: hidden;
+        margin-top: 40px; }
+        .content .map .jrgl .glList .panel {
+          width: 25%;
+          float: left; }
+          .content .map .jrgl .glList .panel .icon {
+            float: left;
+            margin-left: 5%; }
+            .content .map .jrgl .glList .panel .icon img {
+              width: 52px;
+              height: 52px; }
+            .content .map .jrgl .glList .panel .icon p {
+              font-size: 12px;
+              line-height: 1;
+              margin-top: 13px;
+              color: #b2c2d3;
+              text-align: center; }
+          .content .map .jrgl .glList .panel ul {
+            float: left;
+            font-size: 14px;
+            color: #b2c2d3;
+            line-height: 28px;
+            margin-left: 5%; }
+            .content .map .jrgl .glList .panel ul li:first-child {
+              color: #fff;
+              font-size: 20px; }
+              .content .map .jrgl .glList .panel ul li:first-child .little {
+                font-size: 14px;
+                color: #b2c2d3; }
+          .content .map .jrgl .glList .panel .line {
+            float: right;
+            width: 0;
+            height: 72px;
+            border-left: 1px solid #2f4979;
+            opacity: .5;
+            margin-top: 5px; }
+
+.login_bg {
+  height: 100%;
+  width: 100%;
+  background: url("../images/login_bg.png") no-repeat;
+  background-size: 100% 100%; }
+  .login_bg .container {
+    width: 400px;
+    height: 546px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -273px;
+    text-align: center; }
+    .login_bg .container img {
+      display: block; }
+    .login_bg .container img.logo {
+      width: 334px;
+      height: 64px;
+      margin-left: 33px; }
+    .login_bg .container img.adverText {
+      width: 288px;
+      height: 19px;
+      margin: 20px 0 0 56px; }
+    .login_bg .container input {
+      width: 298px;
+      height: 42px;
+      line-height: 42px;
+      border: 1px solid #2f4979;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.3);
+      background: transparent;
+      margin: 0 auto;
+      text-indent: 20px; }
+      .login_bg .container input.account {
+        margin-top: 50px; }
+      .login_bg .container input.password {
+        margin-top: 30px; }
+      .login_bg .container input:focus {
+        border: 1px solid #42a9f2;
+        color: white; }
+    .login_bg .container button {
+      width: 300px;
+      height: 44px;
+      margin: 30px auto 0;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      background-image: linear-gradient(0deg, #3f6fc6 0%, #42a9f2 100%);
+      box-shadow: 0px 1px 0px 0px #1e4b9e, inset 0px 1px 0px 0px #61bdff;
+      border-radius: 2px; }
+    .login_bg .container .panel {
+      width: 400px;
+      height: 400px;
+      margin-top: 40px;
+      background: url("../images/login_border.png");
+      color: #fff;
+      overflow: hidden; }
+    .login_bg .container p.red {
+      height: 40px;
+      line-height: 40px;
+      font-size: 12px; }
+    .login_bg .container .question {
+      text-align: center; }
+      .login_bg .container .question a {
+        line-height: 28px;
+        font-size: 16px;
+        color: #ddd; }
+    .login_bg .container .seccess img {
+      width: 60px;
+      height: 60px;
+      margin: 75px auto 0; }
+    .login_bg .container .seccess p {
+      font-size: 18px;
+      line-height: 28px;
+      margin-top: 20px;
+      text-align: center;
+      color: #42a9f2; }
+    .login_bg .container .seccess button {
+      margin-top: 54px; }
+    .login_bg .container .login_panel ul {
+      font-size: 20px;
+      margin-top: 40px;
+      overflow: hidden; }
+      .login_bg .container .login_panel ul > li {
+        width: 50%;
+        float: left;
+        cursor: pointer; }
+        .login_bg .container .login_panel ul > li ol {
+          overflow: hidden; }
+          .login_bg .container .login_panel ul > li ol li {
+            text-align: center; }
+            .login_bg .container .login_panel ul > li ol li:nth-child(2) {
+              width: 26px;
+              margin-left: 87px;
+              margin-top: 10px;
+              height: 0;
+              border-bottom: 2px solid #070e1e; }
+        .login_bg .container .login_panel ul > li.active ol li {
+          color: #42a9f2; }
+          .login_bg .container .login_panel ul > li.active ol li:nth-child(2) {
+            border-bottom: 2px solid #42a9f2; }
+    .login_bg .container .login_panel .register .step1 .vertiCode {
+      width: 300px;
+      margin: 76px auto 0;
+      overflow: hidden; }
+      .login_bg .container .login_panel .register .step1 .vertiCode input {
+        width: 174px;
+        float: left; }
+      .login_bg .container .login_panel .register .step1 .vertiCode button {
+        width: 114px;
+        float: right;
+        margin-top: 0;
+        font-size: 14px; }
+    .login_bg .container .login_panel .register .step1 input.messCode {
+      margin-top: 30px; }
+    .login_bg .container .login_panel .register .step2 input.setPwd {
+      margin-top: 76px; }
+    .login_bg .container .login_panel .register .step2 input.surePwd {
+      margin-top: 30px; }
+    .login_bg .container .find_pwd_panel p.pwdTitle {
+      font-size: 20px;
+      line-height: 1;
+      margin-top: 40px; }
+    .login_bg .container .find_pwd_panel .step1 input.account {
+      margin-top: 122px; }
+    .login_bg .container .find_pwd_panel .step2 p.tips {
+      width: 267px;
+      margin: 50px 0 0 48px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: left; }
+    .login_bg .container .find_pwd_panel .step2 input.messageCode {
+      margin-top: 20px; }
+    .login_bg .container .find_pwd_panel .step3 input.newPwd {
+      margin-top: 88px; }
+    .login_bg .container .find_pwd_panel .step3 input.sureNewPwd {
+      margin-top: 30px; }
+
+.database {
+  width: calc(100% - 20px);
+  min-height: calc(100% - 96px);
+  margin: 12px 10px 10px;
+  position: relative;
+  border: 1px solid #2f4979;
+  box-shadow: 0px 0 20px 3px #02365f inset; }
+  .database .border_tips li {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #42a9f2; }
+    .database .border_tips li span {
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      background: #0a233d; }
+    .database .border_tips li:nth-child(1) {
+      left: 0;
+      top: 0; }
+      .database .border_tips li:nth-child(1) span {
+        background: linear-gradient(left top, #02365f, #0f1626);
+        left: 0;
+        top: 0; }
+    .database .border_tips li:nth-child(2) {
+      right: 0;
+      top: 0; }
+      .database .border_tips li:nth-child(2) span {
+        right: 0;
+        top: 0; }
+    .database .border_tips li:nth-child(3) {
+      left: 0;
+      bottom: 0; }
+      .database .border_tips li:nth-child(3) span {
+        left: 0;
+        bottom: 0; }
+    .database .border_tips li:nth-child(4) {
+      right: 0;
+      bottom: 0; }
+      .database .border_tips li:nth-child(4) span {
+        right: 0;
+        bottom: 0; }
+  .database .forms {
+    height: 78px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #2f4979;
+    box-shadow: 0px 0px 20px 3px #02365f inset;
+    color: #fff;
+    font-size: 14px; }
+    .database .forms ul.btns {
+      width: 400px;
+      height: 32px;
+      float: left;
+      overflow: hidden;
+      margin-top: 24px;
+      margin-left: 32px; }
+      .database .forms ul.btns > li {
+        width: 118px;
+        height: 30px;
+        line-height: 32px;
+        float: left;
+        border: 1px solid #2f4979;
+        box-shadow: 0px 0px 12px 6px #02365f inset;
+        border-radius: 2px;
+        margin-left: 20px;
+        position: relative;
+        text-indent: 10px; }
+        .database .forms ul.btns > li:first-child {
+          margin-left: 0; }
+        .database .forms ul.btns > li ol {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 30px;
+          height: 32px; }
+          .database .forms ul.btns > li ol li {
+            height: 16px;
+            cursor: pointer; }
+        .database .forms ul.btns > li span {
+          position: absolute;
+          width: 10px;
+          height: 16px;
+          background: url("../images/btn_tip.png") no-repeat;
+          right: 10px;
+          top: 8px; }
+    .database .forms .search {
+      width: 298px;
+      height: 30px;
+      margin-top: 24px;
+      border: 1px solid #2f4979;
+      float: left;
+      margin-left: 40px;
+      border-radius: 2px; }
+      .database .forms .search :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #2f4979;
+        opacity: 1; }
+      .database .forms .search ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #2f4979;
+        opacity: 1; }
+      .database .forms .search input:-ms-input-placeholder {
+        color: #2f4979;
+        opacity: 1; }
+      .database .forms .search input::-webkit-input-placeholder {
+        color: #2f4979;
+        opacity: 1; }
+      .database .forms .search input {
+        width: 258px;
+        height: 32px;
+        line-height: 32px;
+        float: left;
+        background: transparent;
+        text-indent: 10px;
+        color: #fff; }
+      .database .forms .search span {
+        float: left;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        background: #2f518e url("../images/search.png") no-repeat center center; }
+    .database .forms button {
+      width: 100px;
+      height: 40px;
+      float: right;
+      margin-top: 20px;
+      background: #42a9f2;
+      border-radius: 4px;
+      font-size: 18px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      margin-right: 32px;
+      cursor: pointer; }
+  .database table {
+    width: calc(100% - 64px);
+    margin: 10px auto;
+    border: 1px solid #2f4979;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #fff;
+    table-layout: fixed; }
+    .database table tr {
+      height: 40px;
+      border: 1px solid #2f4979; }
+      .database table tr:nth-child(odd) {
+        background: rgba(17, 31, 61, 0.4); }
+      .database table tr:first-child {
+        font-size: 16px;
+        background: #111f3d; }
+      .database table tr td {
+        border: 1px solid #2f4979;
+        text-align: center; }
+  .database .page {
+    display: table;
+    margin: 25px auto;
+    overflow: hidden;
+    font-size: 14px; }
+    .database .page ul {
+      float: left; }
+      .database .page ul li {
+        float: left;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        color: #010101;
+        text-align: center;
+        margin-left: 5px;
+        background: #2f4979;
+        border-radius: 2px;
+        cursor: pointer; }
+        .database .page ul li:first-child {
+          margin-left: 0; }
+        .database .page ul li:last-child {
+          width: 56px; }
+        .database .page ul li.active, .database .page ul li:hover {
+          color: #fff;
+          background: #42a9f2; }
+    .database .page .perPage {
+      float: left;
+      margin-left: 40px; }
+      .database .page .perPage p {
+        float: left;
+        line-height: 32px;
+        color: #fff; }
+      .database .page .perPage .btn {
+        float: left;
+        width: 64px;
+        height: 30px;
+        border: 1px solid #2f4979;
+        box-shadow: 0px 0 22px 4px #02365f inset;
+        text-indent: 10px;
+        color: #fff;
+        line-height: 32px;
+        position: relative;
+        margin-left: 10px;
+        border-radius: 4px; }
+        .database .page .perPage .btn span {
+          width: 10px;
+          height: 16px;
+          position: absolute;
+          right: 10px;
+          top: 8px;
+          background: url("../images/btn_tip.png"); }
+        .database .page .perPage .btn ol {
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          right: 0;
+          top: 0; }
+          .database .page .perPage .btn ol li {
+            height: 15px;
+            cursor: pointer; }
+
+#heatMapContrainer {
+  cursor: pointer;
+  margin-left: 20px; }
+  #heatMapContrainer button {
+    display: none !important; }
+
+/*# sourceMappingURL=pageStyle.css.map */

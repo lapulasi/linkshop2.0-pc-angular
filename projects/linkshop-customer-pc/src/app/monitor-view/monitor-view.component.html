@@ -1,0 +1,34 @@
+<div class="container-fluid" style="margin-top: 62px">
+  <div class="filter-org">
+    <div class="row side-space">
+      <button class="btn btn-primary col-1" (click)="selectOrg(staticModal)">筛选组织</button>
+    </div>
+  </div>
+
+
+  <div class="container-fluid" >
+    <div class="row" *ngFor="let i of [0,1]">
+      <div class="col-4"
+           *ngFor="let shopDevice of shopDeviceList | slice:((currentPage - 1) * itemsPerPage + 3 * i):((currentPage - 1) * itemsPerPage + 3 * i + 3)">
+        <app-monitor [deviceUID]="shopDevice.deviceUID"></app-monitor>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
+       tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!--<h4 class="modal-title pull-left">{{companyName}}</h4>-->
+          <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide();">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <app-org-tree [companyId]="orgCode" (change)="getOrgInfo($event, staticModal)"></app-org-tree>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

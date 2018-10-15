@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAK;EAAC,SAAS,EAAE,MAAM;EAAC,KAAK,EAAE,IAAI",
+"sources": ["monitor.component.scss"],
+"names": [],
+"file": "monitor.component.css"
+}

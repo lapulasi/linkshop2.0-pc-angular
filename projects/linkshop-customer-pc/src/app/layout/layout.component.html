@@ -1,0 +1,26 @@
+<div [ngClass]="{'index': indexActive}">
+<div class="top">
+  <ul class="logo">
+    <li><img src="../assets/images/logo.png" alt=""></li>
+    <li>门店零售智慧参谋</li>
+  </ul>
+  <ul class="user-info">
+    <li (click)="loginOut()">[退出]</li>
+    <li><a href="javascript:;">{{name}}</a></li>
+    <li>您好!</li>
+    <li (click)="screenFull()" [ngClass]="{'quit-screen' : screenFullStatus}"></li>
+  </ul>
+  <div class="org-name">{{org.name}}</div>
+</div>
+<ul class="side-bar">
+  <li [routerLink]="['/', org.orgCode, 'index']" [ngClass]="{'current': indexActive}"><span class="icon icon0"></span></li>
+  <li [routerLink]="['/', org.orgCode, 'stat', 'guest']" routerLinkActive="current"><span class="icon icon1"></span></li>
+  <li [routerLink]="['/', org.orgCode, 'stat', 'sales']" routerLinkActive="current"><span class="icon icon2"></span></li>
+  <li [routerLink]="['/', org.orgCode, 'stat', 'device']" routerLinkActive="current"><span class="icon icon3"></span></li>
+  <li [routerLink]="['/', org.orgCode, 'heatMap']" routerLinkActive="current"><span class="icon icon4"></span></li>
+  <li [routerLink]="['/', org.orgCode, 'monitor']" routerLinkActive="current"><span class="icon icon5"></span></li>
+</ul>
+
+
+  <router-outlet></router-outlet>
+</div>

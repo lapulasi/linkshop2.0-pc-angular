@@ -1,0 +1,35 @@
+<div class="container-fluid">
+
+  <app-cond-stat (event)="acceptEvent($event)"></app-cond-stat>
+
+  <div class="row area-trend side-space">
+    <div class="col-5 area">
+      <!--    区域表现   -->
+      <app-sub-org-stat [cond]="cond" [page]="page"></app-sub-org-stat>
+    </div>
+    <div class="col-7 trend">
+      <!--   趋势分析-->
+      <app-trend-analysis-chart [cond]="cond" [page]="page"></app-trend-analysis-chart>
+    </div>
+  </div>
+
+  <div class="row eaharts side-space">
+    <div class="col">
+      <p class="row eaharts-title">平均日销售</p>
+      <div class="row echarts-area" echarts [options]="salesStatService.daySaleLineOption"></div>
+    </div>
+    <div class="col">
+      <p class="row eaharts-title">周内销售分析</p>
+      <div class="row echarts-area" echarts [options]="salesStatService.weekSaleLineOption"></div>
+    </div>
+    <div class="col">
+      <p class="row eaharts-title">周内均价分析</p>
+      <div class="row echarts-area" echarts [options]="salesStatService.weekAvgPriceLineOption"></div>
+    </div>
+    <div class="col">
+      <p class="row eaharts-title">周内效率分析</p>
+      <div class="row echarts-area" echarts [options]="salesStatService.weekEtaLineOption"></div>
+    </div>
+  </div>
+
+</div>
